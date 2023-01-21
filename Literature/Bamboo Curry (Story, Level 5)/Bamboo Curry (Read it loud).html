@@ -1,0 +1,114 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <style>
+        .customTempCodeHolderForSocialMedia {
+            display: none;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        i.ibb {
+            display: block;
+            background-color: black;
+            color: white;
+        }
+
+        i.ibg {
+            display: block;
+            background-color: rgb(50, 50, 50);
+            color: white;
+        }
+
+
+        ul.no-bullets {
+            list-style-type: none;
+            /* Remove bullets */
+            padding: 0;
+            /* Remove padding */
+            margin: 0;
+            /* Remove margins */
+        }
+
+        li.customLi {
+            float: left;
+        }
+
+        li.customLi>span.customSpan {
+            display: block;
+            padding: 8px;
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<pre><span class="para1"># Have you ever eaten a dish made of bamboo? Let's read this picture story and find out which part of bamboo can be cooked and eaten.</span> <button data-bind="click: function() { readIt('para1') }">Read It</button>
+
+<span class="para2">One day the mother-in-law of a Santhal bridegroom cooked a special dish for him when he visited her.</span> <button data-bind="click: function() { readIt('para2') }">Read It</button>
+
+<span class="para3">"This curry is delicious. What is it?" The mother-in-law pointed at the bamboo door.</span> <button data-bind="click: function() { readIt('para3') }">Read It</button>
+
+<span class="para4">Next morning, just as he was about to leave, he remembered that there was no bamboo in his village.</span> <button data-bind="click: function() { readIt('para4') }">Read It</button>
+
+<span class="para5">So he removed the bamboo door and carrying it with him left for his home.</span> <button data-bind="click: function() { readIt('para5') }">Read It</button>
+
+<span class="para6">On reaching his village, he told his wife, "Make curry with this bamboo door."</span> <button data-bind="click: function() { readIt('para6') }">Read It</button>
+
+<span class="para7">She was shocked. "How can I make curry out of a bamboo door?"</span> <button data-bind="click: function() { readIt('para7') }">Read It</button>
+
+<span class="para8">"Come, I'll help you by chopping bamboo," he said.</span> <button data-bind="click: function() { readIt('para8') }">Read It</button>
+
+<span class="para9">His wife boiled it and boiled it. Later when her husband tasted it he said, "it's too hard to eat. You don't know how to cook."</span> <button data-bind="click: function() { readIt('para9') }">Read It</button>
+
+<span class="para10">His wife added more water and boiled it and boiled it.</span> <button data-bind="click: function() { readIt('para10') }">Read It</button>
+
+<span class="para11">"It's still too hard. I can't eat it."</span> <button data-bind="click: function() { readIt('para11') }">Read It</button>
+
+<span class="para12">The in-laws came to visit the young couple that evening. They all laughed at his foolishness. The mother-in-law said, "Didn't you know the curry was made from bamboo shoot and not from a bamboo door?"</span> <button data-bind="click: function() { readIt('para12') }">Read It</button>
+
+<span class="para13">-- A Santhal Folk Tale</span> <button data-bind="click: function() { readIt('para13') }">Read It</button>
+</pre>
+
+<script>
+    var ViewModel = function () {
+        var self = this;
+
+        this.readIt = function (para) {
+            var msg = new SpeechSynthesisUtterance();
+
+            var voices = window.speechSynthesis.getVoices();
+            // 'Google US English' in Google Chrome (Version 98.0.4758.102 (Official Build) (64-bit))
+            msg.voice = voices[1]; 
+
+            msg.volume = 1; // From 0 to 1
+            msg.rate = 1; // From 0.1 to 10
+            msg.pitch = 0; // From 0 to 2
+
+            msg.text = $("." + para).text();
+            window.speechSynthesis.speak(msg);
+        }
+    };
+
+    ko.applyBindings(ViewModel);
+
+</script>
+<span style="display: none;">Tags: English Lessons,Communication Skills,</span>

@@ -1,0 +1,171 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: window.location.protocol + "//" + window.location.hostname + "/p/personal-posts-menu.html",
+                success: function (result) {
+                    $("div.customTemporaryCodeHolder").html(result);
+                    $("nav.customDynamicNav").html(
+                        $("div.customTemporaryCodeHolder nav.customBitsWilpMenu").html()
+                    );
+                }
+            });
+        }); 
+    </script>
+    <!-- Google AdSense Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+    <style>
+        .customPre {
+            white-space: pre-wrap; //Rule to wrap text written in <pre>, available since CSS 2.1
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<nav class="customDynamicNav">
+</nav>
+<div class="customTemporaryCodeHolder">
+</div>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <div class="customQuestion" ng-repeat="x in question_bank">
+        <h4>{{$index + 1}}) {{ x.questext }}</h4>
+        <input type="checkbox" name="custom_{{x.quesid}}" value="a">&nbsp;A.
+        <img ng-if="x.img_or_text == 0 || x.img_or_text == 2" src="{{x.optionimg_a}}"
+            style="width: 180px; height: 180px; display: block;">
+        <span ng-if="x.img_or_text == 1 || x.img_or_text == 2">{{x.optiontext_a}}</span>
+        <br>
+
+        <input type="checkbox" name="custom_{{x.quesid}}" value="b">&nbsp;B.
+        <img ng-if="x.img_or_text == 0 || x.img_or_text == 2" src="{{x.optionimg_b}}"
+            style="width: 180px; height: 180px; display: block;">
+        <span ng-if="x.img_or_text == 1 || x.img_or_text == 2">{{x.optiontext_b}}</span>
+        <br>
+
+        <input type="checkbox" name="custom_{{x.quesid}}" value="a">&nbsp;C.
+        <img ng-if="x.img_or_text == 0 || x.img_or_text == 2" src="{{x.optionimg_c}}"
+            style="width: 180px; height: 180px; display: block;">
+        <span ng-if="x.img_or_text == 1 || x.img_or_text == 2">{{x.optiontext_c}}</span>
+        <br>
+
+        <input type="checkbox" name="custom_{{x.quesid}}" value="a">&nbsp;D.
+        <img ng-if="x.img_or_text == 0 || x.img_or_text == 2" src="{{x.optionimg_d}}"
+            style="width: 180px; height: 180px; display: block;">
+        <span ng-if="x.img_or_text == 1 || x.img_or_text == 2">{{x.optiontext_d}}</span>
+        <br>
+
+        <span style="display: none;" class="answer_{{x.quesid}}">{{x.answers}}</span>
+        <button value="Submit" ng-click="checkAnswer(x.quesid)">Submit</button>
+        &nbsp;
+        <span class="result_{{x.quesid}}"></span>
+    </div>
+</body>
+
+<script>
+    var app = angular.module("myApp", []);
+    app.controller("myCtrl", function ($scope) {
+        $scope.question_bank = [
+            {
+                "quesid": "1",
+                "questext": "Which of these objects have names starting with 'A'?",
+
+                "optionimg_a": "https://media.istockphoto.com/photos/red-apple-with-leaf-isolated-on-white-background-picture-id185262648?k=6&m=185262648&s=612x612&w=0&h=u9rMspGGTOkgUSzZ6INtT_Ww4NpGz9zHMGRmIJJjBqQ=",
+
+                "optionimg_b": "https://www.worldatlas.com/r/w728-h425-c728x425/upload/94/27/8b/shutterstock-637884949.jpg",
+
+                "optionimg_c": "https://cdn9.dissolve.com/p/D1233_13_557/D1233_13_557_1200.jpg",
+
+                "optionimg_d": "http://ichef.bbci.co.uk/wwfeatures/live/624_351/images/live/p0/25/zm/p025zmzy.jpg",
+
+                "optiontext_a": "",
+                "optiontext_b": "",
+                "optiontext_c": "",
+                "optiontext_d": "",
+
+                "answers": "a,b",
+                "queslevel": "Pluto",
+                "img_or_text": 0
+            },
+
+            {
+                "quesid": "2",
+                "questext": "'____ there any difficulty in finding it?' Select all the possible answers.",
+
+                "optionimg_a": "",
+                "optionimg_b": "",
+                "optionimg_c": "",
+                "optionimg_d": "",
+
+                "optiontext_a": "Is",
+                "optiontext_b": "Was",
+                "optiontext_c": "Were",
+                "optiontext_d": "None of the above.",
+
+                "answers": "a,b",
+                "queslevel": "Earth",
+                "img_or_text": 1
+            },
+
+            {
+                "quesid": "3",
+                "questext": "'We _____ too late.' Select all the possible answers to fill the blank.",
+
+                "optionimg_a": "",
+                "optionimg_b": "",
+                "optionimg_c": "",
+                "optionimg_d": "",
+
+                "optiontext_a": "Was",
+                "optiontext_b": "Were",
+                "optiontext_c": "May be",
+                "optiontext_d": "None of the above.",
+
+                "answers": "b,c",
+                "queslevel": "Earth",
+                "img_or_text": 1
+            }
+        ]
+
+        $scope.checkAnswer = function (quesid) {
+            $scope.count++;
+            var selectedanwers = [];
+            $.each($("input[name='custom_" + quesid + "']:checked"), function () {
+                selectedanwers.push($(this).val());
+            });
+
+            var actualAnswers = $("span.answer_" + quesid).text().split(",");
+
+            if (selectedanwers.sort().join(',') === actualAnswers.sort().join(',')) {
+                $("span.result_" + quesid).text("Right answer!");
+            }
+            else {
+                $("span.result_" + quesid).text("Wrong answer! Try again!");
+
+            }
+        };
+    });
+</script>

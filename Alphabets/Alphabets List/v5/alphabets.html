@@ -1,0 +1,582 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <style>
+        .customTempCodeHolderForSocialMedia {
+            display: none;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        i.ib {
+            color: blue;
+        }
+
+        i.ig {
+            color: green;
+        }
+
+        .customOl {
+            font-size: 15px;
+        }
+    </style>
+</head>
+<div class="customMainDiv">
+    <select data-bind="options: alphabet, value: selectedAlphabet, event: { change: showTable }"></select>
+
+    <table>
+        <tbody data-bind="foreach: customImgTable" style="white-space: nowrap;">
+            <tr>
+                <td>
+                    <h3>
+                        <span class="" data-bind="text: alphabet"></span>
+                        <span class="" data-bind="text: alphabet" style="text-transform: lowercase;"></span>
+                    </h3>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <img data-bind="attr: { src: img1 }" />
+                </td>
+                <td>
+                    <h4 data-bind="text: text1"> </h4>
+                    <h4 data-bind="text: text1" style="text-transform: uppercase;"> </h4>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img data-bind="attr: { src: img2 }" />
+                </td>
+
+                <td>
+                    <h4 data-bind="text: text2"> </h4>
+                    <h4 data-bind="text: text2" style="text-transform: uppercase;"> </h4>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img data-bind="attr: { src: img3 }" />
+                </td>
+                <td>
+                    <h4 data-bind="text: text3"> </h4>
+                    <h4 data-bind="text: text3" style="text-transform: uppercase;"> </h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img data-bind="attr: { src: img4 }" />
+                </td>
+                <td>
+                    <h4 data-bind="text: text4"> </h4>
+                    <h4 data-bind="text: text4" style="text-transform: uppercase;"> </h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img data-bind="attr: { src: img5 }" />
+                </td>
+                <td>
+                    <h4 data-bind="text: text5"> </h4>
+                    <h4 data-bind="text: text5" style="text-transform: uppercase;"> </h4>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    var ViewModel = function () {
+        var self = this;
+        // These are the initial options
+        this.alphabet = ko.observableArray([]);
+
+
+        for (let i = 0; i < 26; i++) {
+            this.alphabet.push(String.fromCharCode(65 + i) + ":" + String.fromCharCode(97 + i));
+        }
+
+        this.selectedAlphabet = ko.observable();
+
+        let imgTable = [
+            {
+                alphabet: 'A',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEhgaWgvtKHtBD1qXR78wtPRyn0Oh5Ly91PebuRwWrFE6TQ8E-FVnH1HfdhzlCkAOD8rU5ees5icp_EaNqgR3nkGrftVxaQkXyp8zDzPOgfkGZhRrgOvECOuHZurbSxy3uqWKxTnRqaueEGSei6AI9apg7MXQTvJ86qUCkZ88uB2_UAucmCQNdh5ekhqjQ",
+                text1: "apple",
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEguPc2u7xYdd4j30jN2XyCS3SDRimZepZjXtz5EMRJZQHwdauqB6Zse9EhEQobcp3XdAokPIbV4JBVAFqCVjWTGbx4leJoDm1Z1qy2-2Ogak7XUBW8BPt6XbY5pPVmduWSUGjPBCfSTWPdvQqfj9dvW9iPcsXf1Oe4O5758oazt5YPudkT0wJR0xccZJA",
+                text2: "almonds",
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEjdxtdOxiMTLDoVr6WR4yao2kfASs1Kdga80CA7KWxlRhy6Kxm0BmSIJIgo2vM_FIOuBLwT0Md3GxJ7E8zAH_tFMJmW_C5Gat1Nwi5MNeS1KHXV4ErZraSTJ56gn5HuTiMu52XyR4K2wc1GQjdPXGe-CRtZ5eJTFfzZPxyn1svP3Mh6UPCeQqskO8hKQQ",
+                text3: "aeroplane",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEjUSpnS9zpHrCDmIND5YAb8Y_TjfPbCzYg3uwLJFQxTMXKPsmAGmfYuOLwD32oPESZYA1jQcoSR9SYSSLaU46bsPfKVZoH8jAvF24bvmgL5AidefvCgXoSyTy6OgGNXJhZWtfaG6KJtDjb5zsfr9htjtF8fD72byL-FuUKW-jmS4JUmEVch-FD3J-SuYA",
+
+                text4: "almirah",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEgMJp04plATKeopgMhDmS8OoFa1q6V92EPffeNE41zqg2g2v8U6qkElu7ZeLzaBM86sd1t3CQx-qvdHuq4UpLoH8JnnEAa13ko2pbMuEnTFRoHOZmxtS_cbMXzDkcvlthruMMBlwMpg1DeTGocXA8vFE1N0NIs-HgS2cKA9bvZCGx1xFOdCZyZ8yZNQng",
+                text5: "ant"
+            },
+            {
+                alphabet: 'B',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEidULlaCIojRcijUHiyZwEs-NSgSAWrsS4ZAl6xazoK-_bhIjHN9yXhXkKAGNi7iptcqJEhV_MMEn4QF8BW-C_vsFubhByFDj03WvJnbTqxvusEe_WvSqMUTuegt9gnRf3z7Cg9ARHzTQtMwAlKjCtimBATo3BSe_UrB3dMMfCXGUfOS87KUWY7S7wzeQ",
+                text1: "blackboard",
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEjqpeaIhgfVQ-mguwhRBKpXbvzNe1efAutzR7EQ1H6JiWgvEs49qE2pZT9isswtDrwN2eeo8tgG1EooQu-uBpYvs2GDChF07qg8AQErJR72XeecgepmLBLFmUpx-B7P9xJ8m6G1s8Hobr6rg4uU6Q8h2YpTSbdURoMvgkHwFjlCu2fPubCYd4k1cZWO3g",
+                text2: "ball",
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEiH8uBiiL8Tib3fqzEx463pJtZoBSjZGlRupKoEN-m0fucPccPE25vaG-JgfpK_msxCokK-JlbTUZcu2AguUbxYYc-c3pDQ_M8KHnEfUeQR-5yeQJ9VYkhDr_3rHw51pSY_uL0WzJCgi1V2X9kFQEWLBKl9Wegu6-t_XxTQDlkzmv7u3VAWMQdFfVw_Zg",
+                text3: "boy",
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEiT1-sxsTrSUS1XxvKbSqXVC9mLhTSOhuP4cQ3xU6mIw85Dmmf9FdKljk_lZGHDZ9r2g3kbge9WnnRfHTFtsZqeRJw9cK1t-qxyFRWKwpgaZTSEScgCFTaI_PN1GUnjB80u01Mkhix53wD_hyRirkQCNhofIjOFM1nKkHLktGOzlr9MaY_4glTLeMIkBw",
+                text4: "banana",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEiY2f1raFWYxrMH0ItJD0UTOOLmYd1QDTexfrePsDj-WJPTa3BxpyML0CtFQgu9CdkGJXD9ZB5abxO0H32a2EVWnU7XZyQafCXJuhRQS2qkiq5iAnNqXsDTm_lwwVgwaCARIfDuA2K74sp9Ftv0yOqcttoX-gPg2bSJVajivunn--JfvBxEnakLXSxyUA",
+                text5: "bird"
+
+            },
+            {
+                alphabet: 'C',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEg0nXNpO_2HYrAHm2dj_HXhHBaFSURM_OCeU6HOek_JXnuo635IHR29vWrTCbqqv0ZknsTYaDq2iD4LXodXe7GzZ8dYKfpEo3BsaxEODH8X9eMtzVRcbTdNsLFvBlYaKC9qTDSWs-Z_rmHT5IgrJC68vEzXqYFG7JTIB3ObXy4ShN-RMH8cNa8-JmYfLg",
+                text1: "classroom",
+
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEjbMX0vsD0LLyEOgVlNxPFG2J9ABKP8fmfN0detxsKvjm0r8k0YCsF9mY5UB_RsOF-aidYSnLzBAW7ZE1vtTghDbmcZ81S5ddM8tPQltgum5JIQCwbvapYIUcK5LAyqhhD-SERoNK-ey6zYkGeLlrmJ9V7IsGVlkAfk3XamGuszuZQcbYTBBQ4JwkuJxA",
+                text2: "cat",
+
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEiXyzs1Sx69Bu_cgPS67OMsfi4RCfXNQAe3vDW9vFGW4UEAuCey3P_YidAxyhBVBN-cX6sOiFLBcALZqUbF2zuS0EOv5gspFRymhFldp06M0rUYs4G2OrqIzex8g4V1BfweZRG485Hy-O05R1519ZGcZGE4791IsJumDx3kyvcUkKBJGRbkdNAEQVx__A",
+                text3: "cucumber",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEhJAxhFcvB5Lc-tMLe2c-1f4QkHM9NG5mxRlQKgNcZnRmSnG6t2W0OgZ-psv8Ue47pbgKh0aFVdyH85lJcIpNH9QB2hRCaqfd8zdFVhye0M4bG3LeGKLmG9k9retEZyMtHDsGhcX-ECydS22gPKoajSQeFw1XTwngki3HifY2oOF4Sq8p42hjMDKw7e7A",
+
+                text4: "cutlery",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEiMJQDNL4ZqDyFfAN0vQoj9N9HYRgTS7rpmkuqSPCw-PulJgEZn7mNIG-0cDZdoARqv4nOzsntyqkNmL-4_q1Hv0-Mhb-6MEx_1LKMGJfNguKX39rhS5eorLMVrln87AMxe9psHjpgMbwczno_ZVoObyG9BMImg5tRAHzf-oO0Ej1yxIZjdJvN9ueTzJA",
+                text5: "car"
+
+            },
+            {
+                alphabet: 'D',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEiAln5Vqt2qQOrCyL8lb42uzAqiknn675HE6JMFqU9yvTBVVgdlzrVNpXI3-j-gbQRvZZvmoh2lUfy4ysT8pm8Vd8E8N4GmBuGlfzRtPdIx9q3cGJc3eHbr9iwzVnoOX3XOezwB6lr_R9JKDqxqTbPZZRSs3l0ApoMUBWQoamx-QLK6WkWHc4DsLhtFkQ",
+                text1: "desk",
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEiFcMM5Yeiy8tGhacwWXw7t4JGg45buOuuUigg1O1YTFW9Jt1wGdAeSp5_argOKRAwqQExUWyWc7uiaQOXVUDy5QxPzqL4LVDT4BC-edwFLJkEJZX8lxImytXtf58eOvYOqa3uSDdeJEXOOm4zB_YlokQdkRkDgxGITE2vG0WGzWTPKX-SgxAexI7T1gQ",
+                text2: "dog",
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEg2nA3r6yfRPwidGXxYtSARrLy6_oHyXBE_fV2bKVP-DDMhbkwyEL-UmhaYRG5KgKf2x7NKbfg4eHDXuBzkWu8KRySr_Wyi4cIRcgRmY7YQ-nqeljMDM6Hmla-vV0MmENk35M8lnJvrAw_lKVhHBwVWCIY-LyzHTuTDSmn8U6P4lNsfArkIjUsGj6Gd0w",
+                text3: "desktop",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEiugNSKd2iYF35l-Yaz3YMRfpEi10Ja--pLs-ZZZttB24FOazHuLES6DEkAS603afePV149wYXbiPFsOFuVO4YiJZ5cDqcQFZhrT0sXWNJHYDyNnL3U90d80ayEhxfqwPSCeV7N_lqiUnq-2f9gsYr_NEJ0rq8BEOpVXfisPu9uuM5mO48xoAuXGdvsGw",
+
+                text4: "dolphin",
+
+                
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEhGZvdLyoJV9SPuFbmPCmke1616ktUxOikzC0tQ8uRRvTv7zX2jYcZqhlMFi0p0wo2HyEy0dJA6kdcEGstHJzC2-w5YzsQ99Lk1E-yG3Au9nYULnx2ruhuPRs6GM48cGa38eB_I8v_y288UCC3vTQBLTohh1tVwDKFyDbFmZu2muA5I3W7kcp1tgKVgJA",
+
+                text5: "donkey"
+            },
+            {
+                alphabet: 'E',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEhUCkJdOEoVLvJS30OcPvGDvtSxDrMCnXHhBCLPdkdfYbMa287amqWo7AQKAZUNbmRofL_K9Q-S7ukjQGO9nK-oH6tg2yakXO4_e9USi3gbiExok8FfXE5Mn91fEoImPDvT59Ev6nXIu92b2WJgQihJl5u-XbyiejwVhITzP6Z9xyRftZlv0VArtW9e_A",
+                text1: "engine",
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEg_NTOhGBXEQ9g9iYrNKLy6OicOY55lIgvXhRzhTGbpvc3OawKmluDUTQ0s1tdHdIByX2GW4deHniA1KQToi6hwaP-pxd-kq3gUmrpXyLF_AUmCgT4LJ25oKkIeVaYrfullthap3DDiIdXG-MlgaCiygqTe-rPVGTmSSq5dnMdlF9lUZWaQvhP4SOO0xg",
+                text2: "elephant",
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEjKSbltFe0_JuK13T-fVAp7Dg9ACjni0VrGlpkhF8rJsIVnPsuERZZ8GC1-OO8vQcuyceJRQMlbmmJ2KPQYqPj6AI5e8uiBbbrSkbt4UysdALtFEtdb03UT5u6CxLAg9By6JMIQRmgmZaEDd7WP3sYmL1IA-Di5Xjr63CUpSZu31quXX3kQN_HtVZ0AJw",
+                text3: "eel",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEhmp21jN_WJomCjnAEKlzK8or3z0UV6_sjfY4mhYkmGpmg1uQ0p1TM4deHPVGU6wetGoCDz1V4Rb6nYcDYvcWq7so7feStMg84Z7BywmMenUiUr9FF7IjYD4YI9Pit1Gn6Rekt838BayBHhac5IxQ94FCJkbN4b8uQzq7dysaM8C5v7ZLyBaw5i2hP4uw",
+                text4: "eskimo",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEhUaIFA6OwZ0UKbfMQgKzQya_AAiXKdK6ypEeZHRZ6J0CEHWSPMZsgfU6Ewh3MCLq82tG7ngnhkK_BbL_Wfm1j2tHggInSO3LmzMvbIuwI6aswPn39_GMvLCrFVIyqUcyi5_Y2F_dqH2jvCOhc6PKPWhUWUsdUypTm3x-nbRjzAr1-eiaa8URJLcQIfYg",
+
+                text5: "eyes"
+
+
+            },
+            {
+                alphabet: 'F',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEipOCHIDR3VrZLB3i3j3sNmD2aSTzvt1tDmHTua8ugfuMV3I5OkVQDeS0JmxOHtrSJxcfeZrAs4N0OdyJkJdHrjUPNQz5isLvzJNioFwGXueCwQ4We9yMfBqEnPaZBnTfCq_CpHH2_g-TXWf3SgLX3koN7hPHNMJ3cGRTCxEfITgR6eVBwo7QpKH8aQFw",
+                text1: "forest",
+
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEje7bsEuBWszfRJ97ijvRh60Z8vZvzNyVXZEWKmA3kETdBXRdwWNHL8N_dsbERxnNy7-FSS6dFWDOeKdOzItSjfQPzgCkR33vyFqszo2meZ3vOtIEVLeMghdMykWvk9b86zGdsGjfWMI-Xw96QhfCK4sI2Dmw41c94gkMzrdNneyi5m4VaddsBcNM8D-Q",
+                text2: "fish",
+
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEhpn8J5g1AbXZbVXc-j9BX_ICMKz1akk_1dzZBmJbIx5EvaF1VFXAYPveZvBPb1ez_2ZCr87SZ69NOcnTuI0fxW7qgoUFjcTTB4EYjeGHRQxruZ69etJjq1aj1SfdFFZR5EebNUH_uNYbSg_BjBYXVX-lnIaooNn1BtyR3OO-ndh6Syk_VEIpDS7dDNAw",
+                text3: "finger",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEhOKN6lbHOxUY_F9_tvZ5DMLtmFgvHBA9xZdc3bpS37nESv2umVdYS3npTX4pf5-QJs2Ou9sXvAmh0AyTsDuERb3Ua15X9FpwpZJRbBpzI5ekWpot_ZpTPPbsFl5XWu-P4lPmUDULan-97uW8t3VjMothEIY4piKnbeKw89phK1QDs4F2yTHFW6hTPqqg",
+
+                text4: "frog",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEh6n8gAPcjc89_9NV9nDX6fw9VAku8MkXjM3b73xncbeHgxUiLTQUCxtDziUU_ZRw5YrjWs8iObzyJK7Bt5xMjWWB1lTrn5McsZhRbMjiPZltK1_RDfq6SxdXDMKl8dbxeoxSK6o1m-GFzfQfPwxivmHm5nmWSpQDWcw0TZNijQM-hqQr3Ku8cychUOAA",
+
+                text5: "fat"
+            },
+            {
+                alphabet: 'G',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEjQ-vB_cEk2jndl5OCnf9YLGDPmzbgV9t6aV1aJq97SZrdkGIGSaYNVVH7VmOshdqjdHzj3f8p2-3qkEvViyNw9FXkgCnxAf-8CFnd74_vCtOb1q3_q6xYGXs8ZVId_ufmdiqWzIdGVzMZnwfaIn__fE9AkM3xD7ZgCPf-s2a5gjRMRKMeUnKw7lNrzqg",
+                text1: "garden",
+
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEhH9YU4SyLXEZEQS5iyhLjfc35sYo86eaT_zXQCzO9QMm59SoejKDmo-GJAbiPPCz3z4XZSA3ypo2nS9tsf-MVLZGICluDGiwI4BtKMy0tU5sQvX_MTIUtMCsybqdYdQK5Z8HsB2cFrk9oh7BTFuboYvGtdyJ8WBcXW02OBlCVu4DxdN183D--YTnltYA",
+                text2: "grapes",
+
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEgX2fG0a0siyVJAIa4cOTvADrzL9AMGAiJvAThBJ7_a926TQT0kbxq4m8savU1hE48OKVlDR9Oo6-XRAf_SSd4RIgQ6EqnvS-xMFUFCpo9mMzXJfYivGMikX2OboskUC5BR6qlc7ItlvD6q5U305TZqN2oPbLgmNxM-qeX2YRlFcIERLGegV9k2mBGAag",
+
+                text3: "girl",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEiJ28Hv7i-_AScFGk58hbV4Vz8-7hzLO2nnR8S0Cl0Pgp_WtZ0v70OLuNPevS63fvPp1KeEa3Ck27HQDgG49RTv7YEkriRkiYiWufWGbnmRm9OJfqv2ld2os73Mou8O-TMpZspFUAY3LkJi10xX3NMzF7YcwVN9JDv9xhd6RiHbG_QLZOdtgpz-21_bkg",
+
+                text4: "goat",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEjVfl1M9VQDNF1uCmKj5R4oKzkD8E6__fTFSE-Z4OQIqO30-5cjSgZ_1evS2okDRWkrUT4lSkpaKG2kX9axqBhVaz8EVKZZLi0QnwpS1sUhOxQsDYDZ0uFsQ-K0GNUm0mOCU28eSaFukU5IhpzZRUNRudcqCharV50Y0yg8BVDJEj-9dfNTryBndD8jww",
+
+                text5: "green"
+
+            },
+            {
+                alphabet: 'H',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEiFCjqA5GOE3Dv4jh81TnbabXd7h4eszoyd1OigLv0wG1E2lOeYMBmtnCdwshZYXlJGnQ5gB2jw4Qc4YAcrQFQcyUQtTjZkDKQoGQMtABu1oc4eZhQlcsJ1EriO0JMqD5x3T45qqncQuUg_C5oSdP_xr14N-2ZAOhPzmrkK7EEZmx4SPsOUuYKfBQDpCQ",
+                text1: "house",
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEg74K9Y_N-A17SDUEk4NnwTqN9TJopO4MyUdljIGEv4V1dMDluQNmjKxVTY6Byh84r8PsmbKvibkW2C-7TkJbS6-R91THCqmfe6rCq0L4XQFkstJuUwq-oH0kXod_nEuT9RBmHV_w_qvCGr_SirjFyeZQdC6zjtOQIvgt0UbxHvWxawD05mdNu053iDJQ",
+                text2: "hat",
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEj-mNPPrv157suxBDFbgRrwfNw1E2wxiNFr56QYFuKvVHr4YIH4t5gmOpgrxzdTa4LDbfB3BuXYn0hUvREbQYxY1s-UvZ6ZnIqPdw0Xjta75MXEymMllCYLbTH1BIm1FDMeVWGEh5YO7gkSgAG82L9b5MCaBrSs0f9rIWFOIqM_MpblmGlmy9QHo0YaDA",
+                text3: "heart",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEhb_0Fg47jYK1ZYeSOpQ0I-VyDVpVqWnjg5G9IOcPReDAuOsJ117nDA9cCtQWBBMIxoqOue0SWmCSaLfrF9uToRu0C8nRSGKTkPTU3PJJZVpakciDQdeZPzKciq_vHXvlUxE6i3LKe1aJErJMhpFr61U4ekYpzZtBmv04g8EJvIr4S9QHS99e_NfjhPDQ",
+
+                text4: "hut",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEiH_LgPRTCqH-qiujbmRNHXAJ5b7klEkPVFHybPYl_qmvMjlcgqvlLh0vPuJVw48C77WLFuwlOhGFVQC1SyXNiNKNjs4I3_oeEJTDLbDp9jsKysgqAcrJScl8CpZ3b_vHWOmgwcj3SdLTA3BZ7wTrk3wQSLIYR-IFWbTgmcU4Fo85qRjpiUxJ8JcfeG2A",
+                text5: "hen"
+
+            },
+            {
+                alphabet: 'I',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEgYM112gksEBrIqi536YurWXvM9aP3Vlv2tQpbVV0A3BLuuKBX5rcia8qv5SREel3xpzu4fT42WZPy7k_5mizFC69OO_e5y6BBEKQp_9w6v0Zet7TrMqT10PRSh622wmy_oOCe2868DN_JPIPq7Au0H1PzXQyFC5Se_3FUcRxSO1nUDGi755Z8neI09pw",
+                text1: "ice-cream",
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEgEwlfWMcGS7diEBgpLnJVAVB0z_sBq0RJfpFaFOb4DMDrgSYcu9nh70TzZVgpQDqZm5pQ06gzc_mQCe9ADnvpbq1T3suchBTkyuCNrRsREgkpfjQ_i4noEzfuwJW6pmxib_0EPpRGW2oDFhFxLaJ6-7_fdS2Zpufs3I6e5PLWQxeLniTQlFBewFUuZjg",
+                text2: "igloo",
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEjxKfIcDpZyCpbQsT3_NU6BK63VJsc25wlFkjkIzkbKgXxL7NVnXecO4LxhQO5OFEq2ggWS-zzR2L0qgsXWy08bX-75KeiVlyt7NBj0UBeLDpqPfmpXuU5PFlkAwSw9gb3SB54YM7Fex4nlVNAbQKOKpGv6F5Am8wwQYQwYhxGeSFptUFUzYy0PRSldXQ",
+                text3: "inkpot",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEgvKHrFMM_62xxHcA7vJz0jtABNdqpMBzY6eVY4Vu_UVFjdQYIZaLKc7FUIHFV3K2t1NZjejIb_43mz35sufjfx9EIbTc242RNqJXGiHNVtjrI3AFMHEsGTHoUjS3o0QT7UyzvTzCVNnWdKOsqNEFkhhddteetgxny5GGUgblZH0E1WmVjSKNJDcJ7R5g",
+
+                text4: "India",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEj8RAruWE4Pd0T5D3aUmixfR4qg2L5hKnYc6wyFaSV9F1m1SI9mDW4z8JyGlpZyqsNAaWEngEsnp8FdFKeCYJr9ulGS3DJqW9WMN62OHAeYqV4d-TCO-LtsCApbdHogApoCzBnIQQD7w7f_vQGPuacVjKsYzVc8AeY3BsiCL004771wrY3AcRDk3ZJOvw",
+                text5: "ice"
+            },
+            {
+                alphabet: 'J',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEiw6BtCsIZxva6CQtvhuBcHLepHm90AHG9Heki5K0hoE3S6PZKDrTMjSzFQyNNiAt6sED_zGh0Ru_DDCCoaGcz-k9SNm_0ZD7HqCUyw1Qk_X3zjHebUFQ_mecpnZ0B-xu97bepJX7RUEgGSffp-ReVCcVw-P2sP7j0nF-M6ct9PIeunXDBo_Y34HZqU4w",
+                text1: "joker",
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEiIMOKqOybgT_sNk8YVpdn93Zg1oZdWODY-Y7KVTk_nC0RSATrskaxryTOyazHhRbKOjrUH4ipwn1-FnCiTuiSniVED-zM1-XCJxtebo5y_N7JnGyHqV0l3VpRWq9AoB7v_g86iMDre2z_Xnhs5ihaM9u-NUrme3X0XfB_ulUO4h0jzCprGGWLpAhV8-w",
+                text2: "jug",
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEg1dfDAFi4Us_RW3qrzubr3ArBw9TamfQUAcDlsnIQMYR3c3ouqsdjrfFCBEyFc6kFH2D5E9GXAsidTwukdxvWGB45DMA_pqyh7uDzpw-tb6hqfo8rb7hj369XJHOa-z_W2jgDHgAW15zS82K877Tv7-WsgsPKgSbuall3MuOVgRZja9C7ypO0e0p-EDg",
+                text3: "juice",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEgsi4tPxCX92Z463ETs9D-oF1M4yD2zgfyT_7eaufrxcMnertT3qEwwAqY9SgOWVKADzIBp7ejMXvzfGqYEnyoe2MAG-RtLcSBgqbW5PIYPkIOiMBGDOCqjLgIUxQX7DFT89LDmjeL52kfOpQZ4Ku_5KyrS78MsUrLPRAYWk1lh48XX9QdLTMQurEseLA",
+
+                text4: "jar",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEgIta1eFgPE_YRrlNaIemRmv_AC4Ik2jY_IhHRUragDXhOYiYVdRI8AsnPI17t_nplyD_Uw8ZRiFgfs_cy7dNd6b6eIfD0R6-XubPFS3khtHzzjlqRcKv3dwB3RM819OXdgjPexdEYKB2YRy3WfxBbSUUwxX3upNehsYNO25mkkAN5wSn6PIV6us7UyxA",
+                text5: "jam"
+            },
+            {
+                alphabet: 'K',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEj9zJiWx2Zo46xvLq2cweMWxe6eKO40TjoP4O4cl2wOvEX4xi7SviSKqpHZWc1NuKtGxmEXt1ViuGZboBUHhf-ptOTSv21B7zoEbf5ElzOmoOEuq_SLzV9pyXbb3JXGR5FtOTVIRK04jQrM5LDY4JA7n9jLMqSAuEpDXUWJISTsyGRrS7cloWLYyd33BQ",
+                text1: "keys",
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEhe9_OHOw646l42oh3sbB58NunGjAin8XI_6-xJMeIqtyL3aJQBt8jepWsWRRtiYpA8vV6FJjNw-G7J_nL6RxZwfcZCeQG1gzVAxLPwTMo2q2pd8SwYK_2thXHkHfqoyYB8xxnfV31GiUwX9BtUpPMXDSjS0O299DYk6VfYJ7VrrafmiFoS1CrhqqP0rA",
+                text2: "kite",
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEj_SlFW8OZ0M5LdSh4XbQ1Zo9F-l57YsYg7z7lYn299_-W57T-_LTMkYZTyw6zL_11pl01OSttLOaoBfH0kzXvXATJYDZfDG9QtC964PjoNtISCZPdFJCt2JoAFdhhGvhKLRCceTi26ckmUB_IPcu5O3Sl8UWn-p9FBeSPsKqiMsn40ZXJTe1gWllgPMg",
+                text3: "kangaroo",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEjLukl3kwFVJYZX4CPb7pk9L_is1BlVrrHpcR9knc08h-TACSkPIcbZUJDaeKPaIkey9i8W8rmbtj1x3I_0qFnEoFaf-lJD2rnUG2to2xhdzt_t9MpQQyMBRl06nVYKYPbTi_zi9SDUZw-993nTLylEaVDMoD8hFTzB9QNa8wwNc7mfTrvbk_nBxM8yTA",
+
+                text4: "king",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEjig8deBcIoS0WUQ2DKObVfvyxU-vTXh_1yOIcCYgI8kUfzNk9LYtLHP6zBGGojKNiuMK7QbvB6xtunBqnlDSpC9nGZUv6Tg8CwFbXBtaCy5JPD9u3YnoypdiyPulh_vd5XsrToWsHL6RkfWtSUcu6LFvxLTb_5A7b-oYli8Kx76B8s5HeKH1HHyyeJJg",
+
+                text5: "knee"
+            },
+            {
+                alphabet: 'L',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEgsklsKcmnKveEXeU_5qrgTd9tnDOHfuiDltkiELI_8TLC8BlXytjho1-aX4NMGO60U6t9loafGKftudmAYz3KrJ75YLJl-VGmRjdvKF39It6G-w_hb20XrNsrrl_e4rKQJOA61zenWem-zPjhZ4U7Bb2i9z3Nau9AtHo_j_rGJpiF9gSdCUPCARcm40A",
+                text1: "lion",
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEi-WwsI5m9tqyWCjteGNa6CNtdaSZCY6HSb74E5DDBuM-2ZuVXSz7JJklsKxLuy7FDunUKTHkwAANa9BQccg0Wr9FvG-6U8MolXh-9zS4qOnuWb4QMRQyTBInUb3KIgVr_zZVmnaUPDMfTyhYO_WeUOcPkrwnQ6cjZbb0eZ7q--otIT-H9jSVAYcaxqcg",
+                text2: "lily",
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEj_6FLcd48G2LjndgJpGZM2tIMN8veXI2U4AiDiPehzQ_6mxzF-ZAbkKAtNunM6OsfjKFwK7NxpobetZKM-F_fSLeBc3AI8JdzudeFFMHf0mX_-H9ZKVF-NUGhSjtY3UaLYuv4b5L7Khv5wqo0kAL4S46cVlaYCzyIH54FfS6NCqHTl9dwBqcNKdZbQWQ",
+                text3: "leaf",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEhhb_JWYe3UihXpqVCnnT6sbjfkt973Ua5If-EYK7HJwlje6FnI-4t6vBgLjhndlqwVydj9G69qyAATAyw8_t9Zkf_QpELN4atD5iLrZKZQmj8hh5Qy_-qsg269JxtvdgGNRnZaGSeKAqUGUo1U24pkYq6Z74c9lJbJUBk298qVOFGzvHDKyOMZK_kMSA",
+
+                text4: "leopard",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEhWTCRKUTFur6KJWvuM5t5vDntl8T9_xvc-KcLUSiEOYW7SAy-jadwK5B5-7YFqKqd8nXPke5IYkpaHHNRMB8JPPMoJUt4aOrQnnaHLc1-ug4_ittMjNcA8H0knQOwRNb_6gjMKC9IsAv61OtMbIjkC-HwtCbAqPQXCpB2OiVVkEmEuOKWmKOU6AsHeBQ",
+
+                text5: "legs"
+            },
+            {
+                alphabet: 'M',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEhigybmvD8_s0KUX-g8mtvqn5cBVdQBKVUqRX8TpiVVs0y3QVu3tCmUFQc6iG7_4O8k4Xr-ceFqHa25qAeLKfW82xMMCVu3hwcKcee1Pd7O2Ski0IZ6LaUcrwJOPuO4Swgq5GubVOLwG0mfmSIzq-M5A7GIfZb880Ab4Ai4QJKaMw3TRe2oXvVBkRsaNg",
+                text1: "mongoose",
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEi1RaREH_ZqIDkVujdJEXUlIhdFNbg4L6qY3h8iRuaCUJRROty98C_9CUMK0oDdJF9CyRj9x9aKMG99wicMORmN29GXR6l6lhGRQPOn-IgxkPoBLcQm9M5UuNoJwDlhL39rVpWFphRzT71Ria7VGCThlEmczQqVRXePLdDojRbheTLR6omDuHCtP1Wlsw",
+                text2: "monkey",
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEiG-GIwycEdGFQhX9TJqaTPl2fQNVip7118D_S_cCUtvZG1I5vRmXfavFQAHJdK1jkI3NTxgAe8leB8NZwOq4-H-E7sCgINGD3lO83KFM0pkDAGZ38ugaOuKGGnFjiiJRroEfFSdM05-UwObosHQGWw90CtYKfEKaHbu7BVC5ufV3undANV4X6oufPJoA",
+                text3: "music",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEi_XZa_A3uAQe4l8ZrSx-LbY8aEPiG-LM9Xgs9zKUG8pAMQiF_BRGaGU6Qfqfrf8PVwRmY5e_-u8jFlt7pCBLR4oAldeaFepCZYhJaroVEpjow1KdvPOBUx0DLgEIykThoM3OGJpbgrZuCAvcSH4_8rz4a2I2MycwuGAJyqUSLD_dYhblnNy6mbed42wg",
+
+                text4: "mirror",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEhOTB3g__1s44gUeyT3-qk-yg4xTDE4OGhNoLnU9JUZgVghdlj5v2BXwltv214QbRKQh55dIeiuhAHgAiRcyT94pupC6wvyWgrMoKSMwEOgt6YRCYm8ygQ-2SCBPqsd2u_f6oUOgwFKqaRh7MPHL7jAiCYsoHUYL4ns22V6LJUND49l0ZLZKd56U6uC9w",
+
+                text5: "man"
+            },
+            {
+                alphabet: 'N',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEhbY_zQEAL_Ju_dZ8XxEBTjjV9-twcfUoBixFEApkC66EzQ1dl6Gbx7MunWjs0sxuvw_CTCaaQf873Unm6l8_5D-7KfQFi77JZnYlGRFHB4R9GhuWQpFkgRkAQoPqHXUi4epk7rPvwDZbONVb6DZU1wpGTZC0MAiaUk406pF87zetJ_veNvXYBY-2gUlQ",
+                text1: "nose",
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEjH8RRnTiRavS5KhlCIzohJwL3_erfcyU4elGbefSk7oGcNVQqb4BNv3S-7TV06DU7ozIdkdHkIHOqrbnDe8Fy_iqHWAmb5vzWFBE3VwupbmQ4YvW59hLXkXUEckTnd-BjO8N4GWSexjsRvoPPdcNdfuxb4U7qQgRJUMrkDIqAQWGmBHkgRPoBx2M3wMw",
+                text2: "nest",
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEh3fYnu2XHob5fV8fSm2GBqvxSrc6ega2KApHtGJugVHlrCDSsdBIi69xmsLfLx0UF1fx62Ik6981kgS4YqTWWybUWPUHlFLsvXdltsNhN3-hQmBGC-3ewpwhxVm_TPUB2iusZob0p27tc2bsVP4ZJrrOZcM4feTUEQVc7vidV6ruzpBWxzLstwBd6vuw",
+                text3: "night",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEgZOY1tnZW3unBFXF-EDloaAvf7rZ4AFZhI8CPOaT05Cg_6MIAoTOUuNrNwwbuSNs_K_3eet6RXJgrPZd7ghag5t5u4osI10sMBWEIJu0rkl9uB9LvOlmjIGRuWLYyuYNje-OmfmCBWMiggSscwDW18KIr-VX9QPlhAg5EwlST1Bt8TpEzEmDRrC1oXUg",
+
+                text4: "number",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEi1vGgsNTGSfaZ6N4Dp7uowt1cU5skLyYozPbxohAxcyUAHXAgoJygijJFpOvpS6CUG4q__DlsjhAFQCXrtIj-FDtvnMYfy1iWrU1rzqFWqa4iFJtF5fEWjWHsePlHptfA9QslsCEnj5CwPp7-vNX4B7KGjtWGK7_rl94U8jo5ZC8yDL9OF0W6u_B8OVA",
+
+                text5: "neck"
+            },
+            {
+                alphabet: 'O',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEivMJVyTQlHg6UTIwHGrfyUtXW289E7NKXZkehjHElJ1-p7G0Jgf5l9ytw8vJ148EqiArQP79iFS6I18hjhMS94YwKOS6vA2J79QbmU94J-dsHyc7ckQZ76t-bbb3TqjqcnPExAxmFZiC1yVUuxUbsvCqe47vcWNaaVB-_ykBOOsmGYHMRlYxVw07L_6A",
+                text1: "owl",
+
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEgMT9Wdtkk6nboWg2ktZ3TUznU4vl8LFlQwy-A-dPv9UwHStH7C3KtWTarLdAxs59PEW9gxIgX9F9ca-D8ef86gLqBjfI7JIfm-l8hFp3mYJoFiWqWY5BqlpxvG7Cku0o5vIEI0jte74aNgWeOWgFyw1Wa4D748fJd7YZ04Kg68HNQYziM9RiO2OPgJaA",
+                text2: "orange",
+
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEh7dLP3eZTiRly56emrgfiY_dYXKy3f8C27BLMAfr_5HsMiXvbf8YTKg_GdVoK05fF8lfKinCxi_4uETU7rjNrSvY5HbAG1bJ_hpAYboUGquwG3lxV_0qf-ANW_mM-LhKndfHpFyw3ZHNQO0JG-rTjQpBJlaOfgoaA2roLCPcSj9e4UgePjzhqgcuco2w",
+                text3: "ostrich",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEgckoehl2NacJiECRGhJGWHH8jrKZ9oVr4eVxqGnBMuVf8Xrbs_sTwsY64IzLyyP0CBjilPlpFurJyljX5CYsKdSyLRtOwzYN5x9eA1uFfRJD8kHIsioLxR51fCSt3AfW0MO7_Ly2X-c3NprVyrXYx4vhV4X7T-FMECFHYED2fVA-rz2gPXj57J5yD_4g",
+
+                text4: "om",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEhnxZj1f3Xe1PIgbwlPNMtljbMLwx9_ezzN0j0ZvnJxXPIq8KqIjeGSuEG8kBcgxV2lxQ0-_y3e0Emu0uG-7LM923D6NlKr_cP2ItdDcJYwTOcz2iXKo60nKiuXpIgQqMc6ku4n9Bv_jZ-ZfH1tsZcKZbCR2B1o-JxpeH7LbPz2Ds2J7IcsiZz_kMDaZQ",
+
+                text5: "oval office"
+            },
+            {
+                alphabet: 'P',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEgbTrQldDWc-5xleicAFrVZkZnr03epaBRtwjpNt3RnlIT3dQyQtePd98xo7EBCYnJDmoJLKbpwO8rhx-jGIgLjv7JsVml2yTlUSNAeQnAD1-eaI889z5b0JDElncOvx9xrToUjY3gzopD3jHG1yVxaiB2Xm_e_NSXWDxR-ebDAGTcPjLRe69auHhzyPg",
+                text1: "pen",
+
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEhdPvbrP_FOHg_QaU24mWfeMkZXPLZMbuxF5p_Q6soG1029OGn42wekeKm-hpKGT_PyYCXv0MVyJ48PwcJDhL78HZ4j3n7zwygBRh_IP3EKPailt8AKt5B22_3pZJxoDtNj0gzmSHUe6mKjmAGYFbRKWKgJOrHrGNVJsoeEQ4h4rOTLd6oGugrmlXnF9Q",
+                text2: "parrot",
+
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEiQCnRSUdoH0GuBv5k0CkjPJzFVi31L5Y12aFMlFJwPDeMhT0mS1GjI1YXcVe2pDaiPf6g3q1hnE5nWj40YCoPNuccB9DUR01LBGT2ZSWxXSa84WgAKSnJbspfcA34XBdxyc2oG3JW-XFB3krIJMDahq-qj4AN01BL6gjGEJA9kfY-17BTHwpAPXD3P0Q",
+                text3: "pink",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEjl2aD0zk5T8a8oJP2cguCkVcPE6sklMZ09BXNvyVoWzfZGMLuoho9SDg321Yhq-NcEpGBiUSgVxFP3onOe86dfwtuSw9pb9aXDl8OF0LOSFW4xjOyq1teuVrZTiti4bLnaFDAPcqkluKVxJKDTSJI7FZqanU2ASO4zf2faLc00ITCs3PCHvgUiaW-SuA",
+
+                text4: "potato",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEgGP0gGYNEowWZLkkOaNiJmzcDlU1EWkLKWPabmBKH5WxwXj7_4ghYP3ByCDAckROBB6VGgO1K7z0RAUB_BAPzZk9W0dhW6tlXhlzw4ZKVfUJo3JT08EbbZO-Dzft07vn5EhbvA68L1sSn4BpSsylrO6WUw3mGREyRwyHUUPGbd9AEPtvm4v6CrDBdjfA",
+
+                text5: "pentagon"
+
+            },
+            {
+                alphabet: 'Q',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEhFSLeys2XGPh_1He8EwIGA9UAEVCd1sYWeKdIa33684sm2gV6K4-WVw8xkP6rDxLN7aleTBQLevHG-h_GnaAb84Bi5djKqd2VELClmsZ3jBT9qQrsIADivQz8wP-XZWDt_uzE7ODPV4_P_dXdVN3o-LFm9ZtTGYJE8-kf3zhMNnw7U9k5HXTmd7IrqUQ",
+                text1: "queen",
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEgFP_08EcLPcM5wbsuqZGDjHR5c8X2Czj1VQrzpdxOqBD9AjFeSqacqHBooJiSqyXTFoFc7HfB7asJL8uALHpzCoUJ6Pokibd1smUbxItkAUhqUpvb_IfqRQUC9F3yWX4-QH9Sbah2EynSpKqZpJySwTBxbMsEiIuheExz-Am1Wc7SRNnd-vhCgrXMfZQ",
+                text2: "question",
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEgqwB2ftMygzd8j1Jr5z85XMd-cys9pPRsTJXiDViQGYQed93TnkywTBTQvMWZzW0TmbILxsFqRubLMo9r1TQ5cnj7ZTTkpetNqkql-YRMUmfn6euoTV5lkNoYDeV5XQFXBBWkfuY9gC5HiKD-llW6povkIyL8Q4qsuC9lp5oEHP9kpAkYaCfe09ubKaA",
+                text3: "quarter",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEi9lgz8vw2lOexY_rn4HfDRmHuZTrL4C-UP0J4K3gDnPAJD3mG7SQvnZGrXve7q-8u0uKsM0Dw_xJuZAbAbtcWUuFzMZaIXK7nklTpqSgnrB81wLUql31oFQS0ydVo6g8Tv-ypbAPOaUvrwrqeD51H1bfsaqXaC_spDKrnpGpoD--4lfqXm5y4tpVZuGw",
+
+                text4: "queue",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEhvx0jpHphQRWEtZn-8tVNaq04LW3axv1l_fef8YKpjPlz1xxlKRhLuRE2vFaxRc_xSZJLv1Pl5Im4hAtq2YUR3RJAVa4ybdnQ9D5jj5UU3I-5RyNl5mFwfH85ED8vFhpL4EFYYAJ_PSeWfpZRrst454NpucgG2Nfyujz-GrR9fFsOMAK1ZyGoY1jB5YQ",
+
+                text5: "quilt"
+            },
+            {
+                alphabet: 'R',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEi9kxMcJbb8jBpQ9wZULd63hV8GOw0Ps48vq1__AbVF9tP9Bjf_r0Iw5pIAQI_eyVkkW9wXVRgG8_ahOO3SuFLw9y81e0gcw19E_hm3Ee7vo7aFx7BNwSxLr9IHceyMPAC0GROoXFsFHc_VYNb5Ua1BTn8fl3NfrdS-_Om-wBwqil_Ye_fk-bekWC8Dew",
+                text1: "rat",
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEiiAaHmoOBYIdCVV4NaasmS54oXWFsU-DbfroHKDuymQSdoWFKNMxD3_Mh7AlglQ66yb4797hmhwiDRaZfL-wGBvCaudgFDKdNk3lkbokS4s4ZWuWB5cWnzLbW8HYCvm088UZZzJfTGlRscNnIHdCiHW2iH5dH4-DRTjIMW3h56evA0b8vi-cvQ8S4EMg",
+                text2: "rock",
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEjpHwVPfbci6v39LD1Jfv-VYFApz23ObsxihBQgK3YaYY8Wt-EgbqKBLe9ZAXCifUchzriMyt8zhBZbAODGyUegzzpC6dVrfrt9wxm5ehFL7iB2ZsWkF_4Hm66eFTmqf8yUDMUCJ3DPadeRbPN2erB1VV91o5H04FovbnEFPPCGGPDBYawL1sgu1o5fvQ",
+                text3: "rain",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEjuqEYUB9FMMsZ7PVDSH09RN-lQGpQ0wcwCmz-cb3yrXbn0T2HDvgFBn7MR7hBM30314XFU5gPVifFid06j3jIPOlehXN7ZVY5zeyZH7a-sg6WEyoeZU8hqydND7MaFsZzGk4eSrtv2nBDCabK-JmNRzd99yhwxZijMLpxNO_2wa9_R__qshLDTivsiGw",
+
+                text4: "river",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEjLZ7SEp9DKtWVu78NbO9pv00D_GeUGoT_jedusbveF4kuV_WYOGYZTaS86NMFdSBKMxBy-dT18i5ZhtPs9I8Sg7Colqn_k67EYynnXUzKgSNr_Mg4oRRa4mD_zA_J8IBo66EXGW9_KnCRm4fAqXM1GZMGEfB731Izidwv12QwjzhovXX6k9QtEDEflLQ",
+                text5: "rabbit"
+            },
+            {
+                alphabet: 'S',
+
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEgZ5Sttr2rTeTfsQ5G2x3YHfx8qzi8zywYvI_XiHM4IPI7fC-yyFW8mPeTR5dSLoW-aPAP5z8wuAZkaAG_5sSIIVN2z-LIoEzUoUqzVbMaBGb4ym6epUp8RWN5YnpU_vN0i8UCMdTLe_wN-4sFUVwl7kdQe7l3-EkXMl9T_FZgUTEOR68Dra0iA4kus0Q",
+                text1: "school",
+
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEilJw27o-qv14TVfGWAJpcBzPqrUfBxt4Yrvn6J3S57-z2iQeujJ1DoEw_whUO2yktDacEtgfpzElU9-yN41V7peKwp1orT1FQ_1QV8uiopXQsx17NAF84yqA4s24O7jGqO4t6nrlaNAJyzA1015w9Uak3xI4hT0ozuiN152l36oi2n6RfdTKsOyRH5ww",
+                text2: "sun",
+
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEgH8V4LnSanbnbk7C-mvf7tu00yfHDgTqQ1SqVMECTLfFdfAjc3XdM9RQjcI5QFbS47awHaHrOMMrqHuRXsDmaK7bA9_xXc-TeC8M8p2gWbLwtRf2fA8k7eAR-D98UcsiKSZ3wrJMWNgSKopAedjwI7WR9oOPudhfkqjVa5kfkyGTnHk6ItPpEhEbJEAw",
+                text3: "shop",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEgKIl6CWqs7zr1ZMJXP2ADg_TE4syzI2Vm9b1xOxMDnwOQQuBJkFAW4zTQoq0XZpVEXtF0fMQ72DkZC5AIJM2oLdFJ4OM4hFkd37rWjzL-JOBbaVGLCLpowsxrCeLF4jSmakXyT1A47qVts_Hnr91mtCwItyw1Er6h5Vz8vyiHWq8qQPGW8uzqdmEFGkw",
+
+                text4: "star",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEjzfe8OVtuHbhmddHoMS0gKaAaMsFXM1kQ5PjPcZplL7xtx491TiDfnSsDJ-_0xcWCTGFRzlebrQCKasntT96NnKtPr2lNdrM6WsPOTGIIpebTaOF2xJk7ff2z7qD7DKutjn_sWBjDeLm59sgojaMbzMybYULAqxf_dLIsSGDe79eAlGqFbgifkIb3-zg",
+                text5: "stomach"
+            },
+            {
+                alphabet: 'T',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEjL4Wx7h2qf5lV9NMt5qWEdexoYGjvaAe6G6rmYcmXsCcWJhRcKcC73JYmiFt2I6t7knd-IDoVm9kgGC-eAKU7qE-I-OdK8wuhnF-_LjSUDsNcM4TXX30PBnXJyQEWQI1vsRzbJMSgdECLPliZJcwf6YHDy_ZDRWxgNEzrIi6R16gan4Jhrf8cCPSwbEA",
+                text1: "train",
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEg9TBsQta0WfOyBbGxVwp3wJxdq7xxTHDHhCQVQiqbgrtT5mcGT-mue2o_GMSHQ-jarwrnY3-q3Go-ShsiUV0kANrHuh-phe1xgEHROswYoiRnothQaOHAKiRSVHW62VobhAYwuvCuY-tyEdn-H8zB6LzVKLBE1etfI3z7d2MBSj8qBclhT2wj2ZMymFA",
+                text2: "tiger",
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEhvvxbXI0EDdCR0WrLz9hZtWiiVl111hMQygV9ownvzaipGyj0r8UVJBaTQDQK87q_2UircQPV_LKpkIhPmB5juCHUWsd73TtCC3zQ0SYaz6ORjhmaevcY_zHRkGewiCbQ4tuKl5FFpLubKPmIItzNa-cIVAUXxxvjM7un0NNBCkFAhlxohLw0hH2LPjg",
+                text3: "torch",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEgE38rs2rVCsJNT1KJfk1YKHEKUfN6DCjZ0T8qFBu4G2ompI9IWUBeY-UB0lDDpUps1kKpZWOHuknVj39M9gb6eob0iC7ZqVRaWiO8l-PlL6eYTXRm0LYNLr6nbk-Km2ptGnvKLmPGL_VZanrypQlUBepZhJJdNNABODQa1oYD60QiH11O1oj_ZXKRM1w",
+
+                text4: "tree",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEiXuTHCZ5S_1SAUovZKN-lr46Bw1xNchx0D5nMHhfcL6O4GljQGvQz7906Z1GdElNQIQ8cw57BhDan3FWlD9--s0yysdHSNWxwVA6neQDa7wYyAnleQlINFu_uRiHkY0XfoIo3VouWrHD6ej3v8CorH0VeM32Q4DJaCSe_QPGEt9nX06V70H8pIr7xYWQ",
+                text5: "tie"
+            },
+            {
+                alphabet: 'U',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEgl9aFgH2LW4aAGPlync77_UCvytKnzNNhFMFEz0hFUctDXvWACvPFKbKrmKlWILf-ke5Y7QenqYm4CZWI1y7f-Ep1TbFtn1sOc2V-Wg_s1oH9xvWtE5l9IBXnDugzobTYykMilpuzakWz_n22VBFkcsX601ZZLVfrxkcVWqvF7KBp3eFN86_YluaW-Mw",
+                text1: "umbrella",
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEjy-26Iwd-WVIKZtqaX2qxD2T5cV67pRaK_AvcnR-5tV3lgf0Kifm2gd7o1ODAHR5S_pX2t3QPseL8V3pYV9Py4Q2tBeM9WsskQ4O4e9U6O8iio1R6199pdLwONuc99xQfqAWHJQG-lgsQRhCZWBujwK3FNZ9Ykwq6nK0a8lPtUJW7ML1Z0IFfGcy4G2w",
+                text2: "underwear",
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEhy0LCYPCYprs4TALThS7OKsuOeenP8W0KCeB3oulytBnxk0P8PTX0Lv91u1fKPJ5TEfNxUBLEPXmaWqsAzn2b-RgWG6Rxkaq0hX3m3K0iedeksKNQUc3AMKMwqc3rg165iVmPwGUsJDK3-QJdIUsOyw0oAJtQGutVe01g7HpY3hrvuxT_b_5RtBiBk6A",
+                text3: "uniform",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEhFo9jtvBeJp1j8GMkQLP99tOOJ-pdGcuKLiCA-9oyJ2IvwJZhbaOo1rY7swPbZFWs1EAjqwklPNKokKuKbWLjY6l2KokGYEgnrM2lKKAFq3WUny8imtNIrVha2LDVLIqPMpf_9RrCOgf3j4HXgo5IfCxiZdUo9_lMsKBftdTNTh5IGhfPAZtGh4xki1g",
+
+                text4: "universe",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEg8JMQFv_C0MjTDwViDQXiAtfFNaXMxaOq7hWbVOHL8c2neU7zPzF2hRNIuniaSbqLKh5OuWHSxE05uizaB1p51bfPMi0oSrDh3VO5fTabJI5zxoDmkJ-CQWZhL_MaHXzOi9209BYzhJXFMs8Vux9ty4S_KVHCHP-TUZBQhnVMj4pOCXoLrvIoFCl2bVg",
+
+                text5: "underarms"
+
+            },
+            {
+                alphabet: 'V',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEjxW0n8TcnOdffViJ1FfpabfCY0DPI4lijWGVzRZMQZXTMk40B0VtRQMU8B4TL_AadxtoG1alMurwtt2-3WPCKTGVq-0djALeyz5z79UIlELbSJbCykvD9Kdp38Ez0Iy_dITApckmliFMV2gnVjZduZ5wTD88sYG4HM8f3JLTc3NecSe5O4ot9tjJeDEA",
+                text1: "vase",
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEh3F3OqMq5uzqwDRT9p-9bsVmHtnSSo00x-Zp1V-3N1_j0IIo6Lly4Ah0Dr5smH4Dxcd3slKUyBXkwa1xYDkp-k9FG0c5Mg6bmVg6hGUBiv8uC25205fbNfysB9syGnab7qKFTIvfchviri3aHQv7rhOsFpohjDYkAbSOZ_9hdM8p3yTPzR40t5k0m6PA",
+                text2: "van",
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEhmk-ZVBDgCF5VClrGvjKF22AujTxanwRDvuFdGCGFPkMsY8clo_aO5xJ0a5NFNKlQrKiSxG1zHDN9jusbHjt6gbVwDS34u4REKJFvhYeVouoGCixGFE87vvo-TUw-mK20qBgNDUFGZWcBJgZPj1cCzpfJsnQ9SOKM1Xyz1sDmwrAqynAECu1RRcGeuVA",
+                text3: "vegetable",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEiRddOFK-cENJS33Ut2vXPaJKs_-mF1GDold7olBefevzjRbQYAoodDT5RRXS32oGMjxs3DlLX7pKehBm2hY8B6pWlrHrS98PBvm-7e6teHwXQ20oAUmJQSi3NIuC49NzNsQbiclVK4CIyiuovZY1Xik6-NjYYJCj2TpWyqSC--OmDEO73eOpstdhcLOA",
+
+                text4: "victory",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEh5esx-jcwNcVDIZl-5B3RVb2i8UgsKrDHIPAMi1oaG6WFuTj4wbAlA88_aI-jx5DRClU906LhdrQgdfDWnHMO73QmNCAKzICnEke_oTIIu-U7HLIk-_XBpVhSCZ-rM-bDvFRdyND_KoNgekKfIZq5y0uZWuU2OUwUU4GakCPNcvpCav2Njt-766zasFQ",
+                text5: "volcano"
+            },
+            {
+                alphabet: 'W',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEgUOPbm_0GTULckNH5imlRGOqqTZ4dk5c-MNx0PcJeZ3_x3KdL754Z1lQbYJwQJLv6vVndER5sm11jmL585VDc9gUCniYiHA2Wf6H_5FQQ29nCvbafAyUFDmcxAcMn05WwXXJ-PIqnPR4NGJygjyGA0ERiKwSb4QM0V_MBHRC-nzDwO_CIV9n8Bf4e1bg",
+                text1: "wrist",
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEiuXBOaEMkMc-OopU9S9i93BTqKHV9gGXdJCtu_AP6JmA20Uoqacu3Ci6Rh0NV55hO_bXOxE8uUzQPSpepDHmq7SkGAalcVKvPeqbm2OA8vFK_viPMrQRbDY4EcfzwG5T7gT6UR2J_yaCn4fBrw0WVvQtqPzYwUTQcdRF2-lkwoxEwlgAwIHLQj8p1Ggw",
+                text2: "watch",
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEg2tuWHC-n_76LcSzdMeDLYdtIOVYVrGd3P4czudRizAvyaqznw1e5n-1ud7lhYHh65LdjM4lMvg7v4PpReVXFi-zxVFP2WBs09J1YL7nZqtPakyJSux74OgfKZKpSXkQoDICfgk0ibgv0J8SelY_cP4hVx4M30JG4UBskLu3PsNEzfbn30AtKg_7O7cw",
+                text3: "window",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEiIALuVQbYg-YUWfBkzi3TmZcPEH5JQsU6j36L7IDomStEO5EDgXIsclVNukbnlhXzO2kc6-5PGwpfgITJbIKUOFg61XNO7LO48T4K0P4KuNmfV3eO6SR2W2ACL8P89mdw-mc4ngnQCsKjFcKnnyJlC5BqfkQpQuQnRzp7bxrVxteZzmt8x4NBxMkL4AA",
+
+                text4: "watchman",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEgAFVTTLBF_UV-96qyF4cyHxMUtDQgqs_OdKk2KDytdCBndDbMdTcaFxbud3JYLedwohhrx4IYXJlL2Vj9VmqyjWBB3TN3nx3w5Vhrmrr3dxA4h6JijdZJSXciQ4Oy0LCsBJW4hXXKuuPMww9uQ2A9tHPM3LqVpkAgpfgeedoOifUYZ8PDe9nsg1T4iFw",
+                text5: "week"
+            },
+            {
+                alphabet: 'X',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEi6HF1xw54pVLpPyJBu3ONK6ZytkNKqcoPXzy2vbakUxAI-XpYXQWmXj38EDbMzmOdv7gMxc5xWrDFI4B7xy_pxvGR8gTgQ2muq8tbHN23dJqPD-jCzgfjBBXiltbsMAi8gaUEFuQDmT0nyoQFAFdLsd6Bw4lNHuZFrvhikBiZdeYjxBB3zJg3VR-dv4Q",
+                text1: "x-ray",
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEglsRI2QXg_-hfQ4RgIgd6lOiBd3iblTxg0b8M5C84eTOO5c_3zdwl2PDOkhFljT-0pyupOIGaWNKkZpMmu3AA8fRfzhwKL0cr2tuBbI6PLdqc83WCTqTlqn8PBYp6PzIJpfiVJ4_jXgE7dLwzhNDAVS2fg3twkVSSPHf50a8cnHpLWgvfQ7Ak6nKA75A",
+                text2: "x-mas tree",
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEhOTM0fwqLFPTBEPaAaQ8UaZqtWBh-rFQjmbz8HzdcpW1_aEOS8vIvmShnSi5euX9VhZNXBZa93OBHWRnxosoEnXvRFhF94goitdv8v65NOi9HenT9X0vxG3KEqTmvp-4G56tIDh-FjbZuxI7zcz0ksXQyMkkVoByLxCwpQuOJnahB-0VIn5UN5DNamOg",
+                text3: "xylophone",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEiu5pulOZhmsGYSFvKqirgENjBgE4RISkTeE_l6Su6juhO0UpimqBlG-VdVVj96rbpw2Z28JqLIVWIulSNJLCVpa1mtST2y8PRW-idapkJ5ivhfxytxvZ7i7IrrxZf_eRqbl3ufQJBktM1YWh_DHpcVNdT51Pm6Ynzgy5KvEjipxswBJGqWEuLm9aOcgg",
+
+                text4: "xerox",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEi3mRgH1UhevqvtRSA22lrESQKo9ybifKCC0abNVtfCe9HqrkEH7PaMHLfV_ze12iSbKN5nCscXWLj1UCU3zf8Z1gSsRSkySv0_jAC0jyYdf5yZLmIR6EDwp7hflsraZ15e9jOFUXQVhiUMlEalQAAshsBvh_l96qhuGi1qEgb2KF3W812UIZZQzEQ6SA",
+                text5: "xiaomi"
+            },
+            {
+                alphabet: 'Y',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEg7wzgKl9PVkeVoqwjgvHImWjIJJ4Ot37zpyr-E0vs5FJJ7KXcvDAnfpl8yR6D-Wh7LPzk5nYYdojZUIIXrav1Ptj0RiAT6k-tIOob9Ea9l06GR-n9C-KTixqtjl0t8774fNeEoviOEin7UxxOquiHPrVV205ECiMbt4Os1ZiXIRo6z5NgdRxXEAanedw",
+                text1: "yo-yo",
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEho0gWStry0Iuy9AAZjFsQZF-EeKco3RJ0FaHQxjZQSLm0yvyF-oXDR8vJMAEs53gvbofP58yXkDu91yHUizV7N1f_RREgKLtndspr42ZRTKHC1TinTflLgkYQ-8ggIuqXThk5CPKHhVK3tu8cPMlaUCQB6z33KeTXc5HqU-Ix_KsxK_6eQ0AHRvyaxDg",
+                text2: "yolk",
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEjxmIo-ikBVO11UsT_HCDZ8CJjGfMkM2mU_dhPl2hkvvFIh91wmHomlvI-ltnMEl3TaWmcqNwNDJGby08CkifFBXvXCI_3JY8JfDv3MmmFqyhu6MscuzKirwI6GHQKT359NDG_KgBV2pvALl5zWyjVSR7B9BZRL7BlP8dMMRlpcLgq0zXKO0i2prr-BGw",
+                text3: "yak",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEjGxXQu6SbzIV25HAACPj8GbDV_onfLJvRAZT-lOsufdNbevrumEtPaEUhsyr-zCCwLZkKjdqJCPL_dsoeD9JUAtNpdIfxWq0VSS7UBQx-Qetl5ldpa2zjJxQsrvMvbRlGwX2jTEQeFp8VNwDd4CU_-qkk2yIpZeSPxi0jpgVktssS_Sg2TCbh9dDt39Q",
+
+                text4: "yellow",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEhVpPz8n4VHV5T5npg01YXIeNzvHdv_SBtcv7GM3qmZTohKR-SMEJjof7p79Anie70J1IjHlAVqawYGWcHWZZXweqtIieZf0hx-sm6C2O6ophVw2OjOGldEtWutpMKeubgaLug_1Sa4IXUpliFPAoWo0P4zoK6A_jANF1bLgtj89WgJXbPbxqKT-mYXbw",
+
+                text5: "yesterday"
+
+            },
+            {
+                alphabet: 'Z',
+                img1: "https://blogger.googleusercontent.com/img/a/AVvXsEikFg-gxYsUbjI_lpcp3yK6X8uUFJbEXxfdjhMPJNVty884-AdRnwYCzmBvrsftafJPP-VNRvftJn3GAS3SQiKqATXnNRT7xZa6MhC7XQz3P725fomnFpLfQ9f70XyRuVESW7TlcL5KPXmBG5CXtxVg2IXkW_V9AuFnt1vX5e7MfD2y_J76xr0AGYgFeA",
+                text1: "zip",
+                img2: "https://blogger.googleusercontent.com/img/a/AVvXsEgrBGL0Cb-lYuvXTM47L60npST6yb9v1renfH_Ft7MqQ7lnzAgqq1GvH9ZBTXvKx8r8RbnQzxJIv1yW7AhchljUEO2bj46fQRVei6dP-6T8vUCCOkiyfjQgZwqPbTTJgLIbr2JsZFtLWCY9Ktd1thE3bOni1r3E1tFtzO4CcFeAjzbBQEnLdc8N08xOyg",
+                text2: "zebra",
+                img3: "https://blogger.googleusercontent.com/img/a/AVvXsEikXFu5CUuc-tVM-v6SqoO6_9kVMBpOacWUAduKsRdm9SIpl-uqBGjwQhWsKmYRDt15d5g6amsKls1oYwxVvvfsw_FH_jMmriSic4JNvLFrEA3R0KQ0X917XcgtoeozhEGfBGU0j9mO4RIR9qB7WTbqF7-FDIu5G4syQhYtrie2rIX9zixe8XPVdzWEIA",
+                text3: "zeppelin",
+
+                img4: "https://blogger.googleusercontent.com/img/a/AVvXsEgHZti_17iiKyzPMfn_f6-dvRZNDGOAY9-I0wa21AgM6Mqs2Bj6oMs2pmOLMNU_E8ilSwjbtBQ_FRbI-Y4X_ZZxnDUP9cDYDNnOLkamwQomuIcwvZnFZK6fUvYllI_r-qu-98OgRNtAo6GxiNwKmI6dfpNkV7qnYLD0dWN90elN6SSnn0q9B9GHEa38HA",
+
+                text4: "zoo",
+
+                img5: "https://blogger.googleusercontent.com/img/a/AVvXsEj3qDWqP4fNZXpanXKN_HHpJtSpy7RZ1PTQHSpWehVfocTkfwXIBhLrwIo9NrI3z6mofQ6VgB7yJaJyXMsjoKevxCF31NMV4rEZ3wuVp7lqMpt7zLQ3PPDgHLqoK5ch-wylY2m8r9c-85tWamQRm2i8tG4pt6doi15r0Ndj1AmDcVvY6TTvhKvtzF_7pw",
+                text5: "zig-zag"
+            }
+        ];
+
+        this.customImgTable = ko.observableArray(imgTable);
+
+        this.showTable = function () { };
+    };
+
+    ko.applyBindings(ViewModel);
+</script>
+
+<span style="display: none;">Tags: English Lessons,Communication Skills,</span>

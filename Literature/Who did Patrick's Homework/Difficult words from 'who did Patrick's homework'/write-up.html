@@ -1,0 +1,253 @@
+<script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            url: window.location.protocol + "//" + window.location.hostname + "/p/personal-posts-menu.html",
+            success: function (result) {
+                $("div.customTemporaryCodeHolder").html(result);
+                $("nav.customDynamicNav").html(
+                    $("div.customTemporaryCodeHolder nav.customBitsWilpMenu").html()
+                );
+            }
+        });
+
+        $.ajax({
+            url: window.location.protocol + "//" + window.location.hostname + "/p/follow-us-on-social-media.html",
+
+            success: function (result) {
+                $("span.customTempCodeHolderForSocialMedia").html(result);
+                $("div.customSocialMediaBtnsWrapper").html(
+                    $("span.customTempCodeHolderForSocialMedia div.customSocialMediaWrapper").html()
+                );
+            }
+
+        });
+    }); 
+</script>
+<!-- Google AdSense Using Machine Learning Code -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-3071098372371409",
+        enable_page_level_ads: true
+    });
+</script>
+
+<style>
+    .customTempCodeHolderForSocialMedia {
+        display: none;
+    }
+
+    pre {
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+        word-break: normal !important;
+    }
+
+    i.ibb {
+        display: block;
+        background-color: black;
+        color: white;
+    }
+
+    i.ibg {
+        display: block;
+        background-color: rgb(50, 50, 50);
+        color: white;
+    }
+
+
+    ul.no-bullets {
+        list-style-type: none;
+        /* Remove bullets */
+        padding: 0;
+        /* Remove padding */
+        margin: 0;
+        /* Remove margins */
+    }
+
+    li.customLi {
+        float: left;
+    }
+
+    li.customLi>span.customSpan {
+        display: block;
+        padding: 8px;
+        background-color: #dddddd;
+    }
+
+    .customOl {
+        font-size: 15px;
+    }
+</style>
+</head>
+<div class="customTemporaryCodeHolder"> </div>
+<span class="customTempCodeHolderForSocialMedia"> </span>
+
+<nav class="customDynamicNav"> </nav> <br />
+<div class="customSocialMediaBtnsWrapper"> </div>
+<!-- End of 'Personal Posts Menu Template For Copy-Paste'. It started from the top of the page from <HEAD> tag. -->
+
+<script>
+    function myclick() {
+        $("h4.modal-title").html($(this).text().trim());
+
+        $.ajax({
+            url: "https://murmuring-ridge-75281.herokuapp.com/meaning",
+            //url: "http://localhost:5000/meaning",
+
+            data: $(this).text().trim(),
+
+            dataType: "json",
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+
+            success: function (response, status, xhr) {
+                //console.log(JSON.stringify(response));
+                //alert(response);
+
+                $("div.modal-body").html(response['m_response_template']);
+                $("#myModal").modal();
+            },
+
+            error: function (xhr, status, error) {
+                console.log(error);
+                //alert(JSON.parse(error));
+                //alert(error);
+            }
+
+        })
+    }
+
+    $(document).ready(function () {
+        $("span.customWord").click(myclick);
+    });
+</script>
+
+<style>
+    span.customWord:hover {
+        cursor: pointer;
+        font-weight: bold;
+        color: red;
+    }
+</style>
+<br>
+
+<pre>
+1. 
+<span class='customWord'>Nintendo</span>: <span class='customWord'>A</span> <span class='customWord'>video</span> <span class='customWord'>game</span>
+
+2. 
+<span class='customWord'>Ignoramus</span>: <span class='customWord'>an</span> <span class='customWord'>ignorant</span> <span class='customWord'>person</span> <span class='customWord'>who</span> <span class='customWord'>lacks</span> <span class='customWord'>education</span>
+
+3.
+<span class='customWord'>britches</span>:
+<span class='customWord'>breeches</span>, <span class='customWord'>or</span> <span class='customWord'>short</span> <span class='customWord'>trousers</span>. <span class='customWord'>The</span> <span class='customWord'>writer</span> <span class='customWord'>here</span> <span class='customWord'>spells</span> <span class='customWord'>it</span>, <span class='customWord'>for</span> <span class='customWord'>fun</span>, <span class='customWord'>to</span> <span class='customWord'>rhyme</span> <span class='customWord'>with</span> <span class='customWord'>the</span> <span class='customWord'>word</span> "<span class='customWord'>witch</span>'<span class='customWord'>s</span>"
+
+4.
+<span class='customWord'>dishcloth</span>:
+<span class='customWord'>a</span> <span class='customWord'>cloth</span> <span class='customWord'>used</span> <span class='customWord'>for</span> <span class='customWord'>washing</span> <span class='customWord'>dishes</span>
+
+5.
+<span class='customWord'>hamper</span>:
+<span class='customWord'>a</span> <span class='customWord'>basket</span> <span class='customWord'>with</span> <span class='customWord'>a</span> <span class='customWord'>lid</span>
+
+6. 
+<span class='customWord'>grimaced</span>: <span class='customWord'>his</span> <span class='customWord'>face</span> <span class='customWord'>had</span> <span class='customWord'>this</span> <span class='customWord'>expression</span> <span class='customWord'>disgust</span>
+<span class='customWord'>scowled</span>: <span class='customWord'>his</span> <span class='customWord'>face</span> <span class='customWord'>had</span> <span class='customWord'>this</span> <span class='customWord'>expression</span> <span class='customWord'>anger</span>
+<span class='customWord'>pursed</span> <span class='customWord'>his</span> <span class='customWord'>lips</span>: <span class='customWord'>his</span> <span class='customWord'>face</span> <span class='customWord'>had</span> <span class='customWord'>this</span> <span class='customWord'>expression</span> <span class='customWord'>disapproval</span>
+
+7.
+<span class='customWord'>glitch</span>:
+<span class='customWord'>an</span> <span class='customWord'>informal</span> <span class='customWord'>word</span> 
+<span class='customWord'>a</span> <span class='customWord'>fault</span> <span class='customWord'>in</span> <span class='customWord'>a</span> <span class='customWord'>machine</span> <span class='customWord'>that</span> <span class='customWord'>prevents</span> <span class='customWord'>it</span> <span class='customWord'>from</span> <span class='customWord'>working</span> <span class='customWord'>properly</span> <span class='customWord'>here</span>, <span class='customWord'>hitch</span> <span class='customWord'>or</span> <span class='customWord'>problem</span>.
+
+8.
+<span class='customWord'>shrieked</span>:
+<span class='customWord'>gave</span> <span class='customWord'>a</span> <span class='customWord'>short</span>, <span class='customWord'>high</span> <span class='customWord'>pitched</span> <span class='customWord'>cry</span>.
+
+9.
+<span class='customWord'>nag</span>:
+<span class='customWord'>one</span> <span class='customWord'>who</span> <span class='customWord'>troubles</span> <span class='customWord'>someone</span> <span class='customWord'>all</span> <span class='customWord'>the</span> <span class='customWord'>time</span> <span class='customWord'>by</span> <span class='customWord'>complaining</span> <span class='customWord'>or</span> <span class='customWord'>asking</span> <span class='customWord'>them</span> <span class='customWord'>to</span> <span class='customWord'>do</span> <span class='customWord'>something</span>.
+
+10.
+<span class='customWord'>drag</span>:
+<span class='customWord'>an</span> <span class='customWord'>informal</span> <span class='customWord'>word</span> 
+<span class='customWord'>something</span> <span class='customWord'>dull</span> <span class='customWord'>and</span> <span class='customWord'>uninteresting</span>.
+
+11.
+<span class='customWord'>slyly</span>:
+<span class='customWord'>secretively</span>
+
+12.
+<span class='customWord'>kid</span>:
+<span class='customWord'>an</span> <span class='customWord'>informal</span> <span class='customWord'>word</span> 
+<span class='customWord'>a</span> <span class='customWord'>child</span> 
+
+13.
+<span class='customWord'>chores</span>:
+<span class='customWord'>work</span> <span class='customWord'>that</span> <span class='customWord'>must</span> <span class='customWord'>be</span> <span class='customWord'>done</span> <span class='customWord'>everyday</span>, <span class='customWord'>often</span> <span class='customWord'>boring</span> 
+
+14.
+<span class='customWord'>attitude</span>:
+<span class='customWord'>a</span> <span class='customWord'>feeling</span> <span class='customWord'>about</span> <span class='customWord'>someone</span> <span class='customWord'>or</span> <span class='customWord'>something</span>.
+    
+<span class='customWord'>Q</span>: <span class='customWord'>Fill</span> <span class='customWord'>in</span> <span class='customWord'>the</span> <span class='customWord'>blanks</span> <span class='customWord'>in</span> <span class='customWord'>the</span> <span class='customWord'>sentences</span> <span class='customWord'>below</span> <span class='customWord'>with</span> <span class='customWord'>the</span> <span class='customWord'>words</span> <span class='customWord'>or</span> <span class='customWord'>phrases</span> <span class='customWord'>from</span> <span class='customWord'>the</span> <span class='customWord'>box</span>.
+
+<span class='customWord'>A</span>:
+<span class='customWord'>CLUE</span>: <span class='customWord'>out</span> <span class='customWord'>of</span> <span class='customWord'>luck</span>, <span class='customWord'>mystery</span>, <span class='customWord'>true</span> <span class='customWord'>to</span> <span class='customWord'>his</span> <span class='customWord'>words</span>, <span class='customWord'>chores</span>, <span class='customWord'>semester</span>, <span class='customWord'>between</span> <span class='customWord'>you</span> <span class='customWord'>and</span> <span class='customWord'>me</span>, <span class='customWord'>look</span> <span class='customWord'>up</span>
+
+1. <span class='customWord'>Some</span> <span class='customWord'>people</span> <span class='customWord'>find</span> <span class='customWord'>household</span> ___ <span class='customWord'>a</span> <span class='customWord'>bore</span>, <span class='customWord'>but</span> <span class='customWord'>I</span> <span class='customWord'>like</span> <span class='customWord'>to</span> <span class='customWord'>help</span> <span class='customWord'>at</span> <span class='customWord'>home</span>. [<span class='customWord'>chores</span>]
+
+<span class='customWord'>Kuch</span> <span class='customWord'>logo</span> <span class='customWord'>ko</span> <span class='customWord'>ghar</span> <span class='customWord'>ka</span> <span class='customWord'>kaam</span> <span class='customWord'>boring</span> <span class='customWord'>lagta</span> <span class='customWord'>hai</span>, <span class='customWord'>lekin</span> <span class='customWord'>mujhe</span> <span class='customWord'>ghar</span> <span class='customWord'>par</span> <span class='customWord'>madad</span> <span class='customWord'>karna</span> <span class='customWord'>acha</span> <span class='customWord'>lagta</span> <span class='customWord'>hai</span>.
+
+2. <span class='customWord'>Who</span> <span class='customWord'>stole</span> <span class='customWord'>the</span> <span class='customWord'>diamond</span> <span class='customWord'>is</span> <span class='customWord'>still</span> <span class='customWord'>a</span> ____? [<span class='customWord'>mystery</span>]
+
+<span class='customWord'>Jisne</span> <span class='customWord'>diamond</span> <span class='customWord'>churaya</span> <span class='customWord'>tha</span> <span class='customWord'>vah</span> <span class='customWord'>abhi</span> <span class='customWord'>bhi</span> <span class='customWord'>rahasya</span> <span class='customWord'>hai</span>?
+
+3. <span class='customWord'>This</span> ___ <span class='customWord'>we</span> <span class='customWord'>are</span> <span class='customWord'>going</span> <span class='customWord'>to</span> <span class='customWord'>have</span> <span class='customWord'>a</span> <span class='customWord'>class</span> <span class='customWord'>exhibition</span>. [<span class='customWord'>semester</span>]
+
+4. ___ <span class='customWord'>the</span> <span class='customWord'>elf</span> <span class='customWord'>began</span> <span class='customWord'>to</span> <span class='customWord'>help</span> <span class='customWord'>Patrick</span>. [<span class='customWord'>true</span> <span class='customWord'>to</span> <span class='customWord'>his</span> <span class='customWord'>words</span>]
+
+<i><span class='customWord'>And</span> <span class='customWord'>true</span> <span class='customWord'>to</span> <span class='customWord'>his</span> <span class='customWord'>words</span>, <span class='customWord'>that</span> <span class='customWord'>little</span> <span class='customWord'>elf</span> <span class='customWord'>began</span> <span class='customWord'>to</span> <span class='customWord'>do</span> <span class='customWord'>Patrick</span>'<span class='customWord'>s</span> <span class='customWord'>homework</span>.</i>
+
+5. <span class='customWord'>Can</span> <span class='customWord'>you</span> ___ <span class='customWord'>this</span> <span class='customWord'>words</span> <span class='customWord'>in</span> <span class='customWord'>the</span> <span class='customWord'>dictionary</span>? [<span class='customWord'>look</span> <span class='customWord'>up</span>]
+
+6. <span class='customWord'>I</span> <span class='customWord'>started</span> <span class='customWord'>early</span> <span class='customWord'>to</span> <span class='customWord'>be</span> <span class='customWord'>on</span> <span class='customWord'>time</span>, <span class='customWord'>but</span> <span class='customWord'>I</span> <span class='customWord'>was</span> ____. <span class='customWord'>There</span> <span class='customWord'>was</span> <span class='customWord'>a</span> <span class='customWord'>traffic</span> <span class='customWord'>jam</span>! [<span class='customWord'>out</span> <span class='customWord'>of</span> <span class='customWord'>luck</span>] 
+
+7. <span class='customWord'>She</span> <span class='customWord'>says</span> <span class='customWord'>she</span>'<span class='customWord'>s</span> <span class='customWord'>got</span> <span class='customWord'>a</span> <span class='customWord'>lot</span> <span class='customWord'>of</span> <span class='customWord'>books</span>, <span class='customWord'>but</span> ___ <span class='customWord'>I</span> <span class='customWord'>think</span> <span class='customWord'>most</span> <span class='customWord'>of</span> <span class='customWord'>them</span> <span class='customWord'>are</span> <span class='customWord'>borrowed</span>. [<span class='customWord'>between</span> <span class='customWord'>you</span> <span class='customWord'>and</span> <span class='customWord'>me</span>]
+
+</pre>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<span class="" style="display: none;">Tags: Communication Skills,English Lessons,</span>

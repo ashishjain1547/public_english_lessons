@@ -1,0 +1,740 @@
+<head>
+    <!-- Google AdSense Machine Learning Code -->
+    <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+    <style>
+        .customPre {
+            white-space: pre-wrap; //Rule to wrap text written in <pre>, available since CSS 2.1
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<a class="customLink" href="http://survival8.blogspot.com/p/index-of-english-lessons.html">Go to Index of English
+    Lessons</a>
+<br />
+
+<div dir="ltr" style="text-align: left;" trbidi="on">
+    Questions on 'was' and 'were':<br />
+    <br />
+    <div style="margin: 0px 0px 10.66px;">
+        <span style="font-family: Calibri;">Fill in the blanks:</span></div>
+    <div style="margin: 0px 0px 0px 48px; text-indent: -0.25in;">
+        <span style="margin: 0px;"><span style="margin: 0px;"><span style="font-family: Calibri;">1.</span><span
+                    style="font-size-adjust: none; font-stretch: normal; font: 7pt &quot;Times New Roman&quot;; margin: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span></span></span><span style="font-family: Calibri;">They ____ playing football yesterday.</span>
+    </div>
+    <div style="margin: 0px 0px 0px 48px; text-indent: -0.25in;">
+        <span style="margin: 0px;"><span style="margin: 0px;"><span style="font-family: Calibri;">2.</span><span
+                    style="font-size-adjust: none; font-stretch: normal; font: 7pt &quot;Times New Roman&quot;; margin: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span></span></span><span style="font-family: Calibri;">My friend ___ absent yesterday.</span></div>
+    <div style="margin: 0px 0px 0px 48px; text-indent: -0.25in;">
+        <span style="margin: 0px;"><span style="margin: 0px;"><span style="font-family: Calibri;">3.</span><span
+                    style="font-size-adjust: none; font-stretch: normal; font: 7pt &quot;Times New Roman&quot;; margin: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span></span></span><span style="font-family: Calibri;">I ­­­____ late to the school.</span></div>
+    <div style="margin: 0px 0px 0px 48px; text-indent: -0.25in;">
+        <span style="margin: 0px;"><span style="margin: 0px;"><span style="font-family: Calibri;">4.</span><span
+                    style="font-size-adjust: none; font-stretch: normal; font: 7pt &quot;Times New Roman&quot;; margin: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span></span></span><span style="font-family: Calibri;">How many people ____ at your home last
+            week?</span></div>
+    <div style="margin: 0px 0px 10.66px 48px; text-indent: -0.25in;">
+        <span style="margin: 0px;"><span style="margin: 0px;"><span style="font-family: Calibri;">5.</span><span
+                    style="font-size-adjust: none; font-stretch: normal; font: 7pt &quot;Times New Roman&quot;; margin: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span></span></span><span style="font-family: Calibri;">My teachers ____ black hair.</span></div>
+    <br />
+    <div style="background: white; line-height: 19.2pt; margin: 0px;">
+        <b><span
+                style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">Q1.&nbsp;</span></b><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">There
+            ____ many people at the show.</span></div>
+    <div style="background: white; line-height: 19.2pt; margin: 0px 0px 10.66px;">
+        <span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">
+            <v:shapetype coordsize="21600,21600" filled="f" id="_x0000_t75" o:preferrelative="t" o:spt="75"
+                path="m@4@5l@4@11@9@11@9@5xe" stroked="f">
+                <v:stroke joinstyle="miter">
+                    <v:formulas>
+                        <v:f eqn="if lineDrawn pixelLineWidth 0">
+                            <v:f eqn="sum @0 1 0">
+                                <v:f eqn="sum 0 0 @1">
+                                    <v:f eqn="prod @2 1 2">
+                                        <v:f eqn="prod @3 21600 pixelWidth">
+                                            <v:f eqn="prod @3 21600 pixelHeight">
+                                                <v:f eqn="sum @0 0 1">
+                                                    <v:f eqn="prod @6 1 2">
+                                                        <v:f eqn="prod @7 21600 pixelWidth">
+                                                            <v:f eqn="sum @8 21600 0">
+                                                                <v:f eqn="prod @7 21600 pixelHeight">
+                                                                    <v:f eqn="sum @10 21600 0">
+                                                                    </v:f>
+                                                                </v:f>
+                                                            </v:f>
+                                                        </v:f>
+                                                    </v:f>
+                                                </v:f>
+                                            </v:f>
+                                        </v:f>
+                                    </v:f>
+                                </v:f>
+                            </v:f>
+                        </v:f>
+                    </v:formulas>
+                    <v:path gradientshapeok="t" o:connecttype="rect" o:extrusionok="f">
+                        <o:lock aspectratio="t" v:ext="edit">
+                        </o:lock>
+                    </v:path>
+                </v:stroke>
+            </v:shapetype>
+            <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_10"
+                o:spid="_x0000_i1059"
+                style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;" type="#_x0000_t75">
+                <v:imagedata o:title="tickbox"
+                    src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                </v:imagedata>
+            </v:shape>
+        </span><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">was<br />
+            <span style="margin: 0px;">
+                <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_9"
+                    o:spid="_x0000_i1058"
+                    style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;"
+                    type="#_x0000_t75">
+                    <v:imagedata o:title="tickbox"
+                        src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                    </v:imagedata>
+                </v:shape>
+            </span>were</span></div>
+    <br />
+    <div style="background: white; line-height: 19.2pt; margin: 0px;">
+        <b><span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">Q2
+                -&nbsp;</span></b><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">____ you
+            tired?</span></div>
+    <div style="background: white; line-height: 19.2pt; margin: 0px 0px 10.66px;">
+        <span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">
+            <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_8" o:spid="_x0000_i1057"
+                style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;" type="#_x0000_t75">
+                <v:imagedata o:title="tickbox"
+                    src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                </v:imagedata>
+            </v:shape>
+        </span><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">Was<br />
+            <span style="margin: 0px;">
+                <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_7"
+                    o:spid="_x0000_i1056"
+                    style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;"
+                    type="#_x0000_t75">
+                    <v:imagedata o:title="tickbox"
+                        src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                    </v:imagedata>
+                </v:shape>
+            </span>Were</span></div>
+    <br />
+    <div style="background: white; line-height: 19.2pt; margin: 0px;">
+        <b><span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">Q3
+                -&nbsp;</span></b><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">They
+            ____ late.</span></div>
+    <div style="background: white; line-height: 19.2pt; margin: 0px 0px 10.66px;">
+        <span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">
+            <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_6" o:spid="_x0000_i1055"
+                style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;" type="#_x0000_t75">
+                <v:imagedata o:title="tickbox"
+                    src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                </v:imagedata>
+            </v:shape>
+        </span><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">was<br />
+            <span style="margin: 0px;">
+                <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_5"
+                    o:spid="_x0000_i1054"
+                    style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;"
+                    type="#_x0000_t75">
+                    <v:imagedata o:title="tickbox"
+                        src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                    </v:imagedata>
+                </v:shape>
+            </span>were</span></div>
+    <br />
+    <div style="background: white; line-height: 19.2pt; margin: 0px;">
+        <b><span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">Q4
+                -&nbsp;</span></b><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">I ____
+            very annoyed.</span></div>
+    <div style="background: white; line-height: 19.2pt; margin: 0px 0px 10.66px;">
+        <span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">
+            <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_4" o:spid="_x0000_i1053"
+                style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;" type="#_x0000_t75">
+                <v:imagedata o:title="tickbox"
+                    src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                </v:imagedata>
+            </v:shape>
+        </span><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">was<br />
+            <span style="margin: 0px;">
+                <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_3"
+                    o:spid="_x0000_i1052"
+                    style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;"
+                    type="#_x0000_t75">
+                    <v:imagedata o:title="tickbox"
+                        src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                    </v:imagedata>
+                </v:shape>
+            </span>were</span></div>
+    <br />
+    <div style="background: white; line-height: 19.2pt; margin: 0px;">
+        <b><span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">Q5
+                -&nbsp;</span></b><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">She ____
+            there.</span></div>
+    <div style="background: white; line-height: 19.2pt; margin: 0px 0px 10.66px;">
+        <span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">
+            <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_2" o:spid="_x0000_i1051"
+                style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;" type="#_x0000_t75">
+                <v:imagedata o:title="tickbox"
+                    src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                </v:imagedata>
+            </v:shape>
+        </span><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">was<br />
+            <span style="margin: 0px;">
+                <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_1"
+                    o:spid="_x0000_i1050"
+                    style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;"
+                    type="#_x0000_t75">
+                    <v:imagedata o:title="tickbox"
+                        src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                    </v:imagedata>
+                </v:shape>
+            </span>were</span></div>
+    <br />
+    <div style="background: white; line-height: 19.2pt; margin: 0px;">
+        <b><span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">Q6
+                -&nbsp;</span></b><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">Everybody
+            ____ pleased.</span></div>
+    <div style="background: white; line-height: 19.2pt; margin: 0px 0px 10.66px;">
+        <span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">
+            <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_35"
+                o:spid="_x0000_i1049"
+                style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;" type="#_x0000_t75">
+                <v:imagedata o:title="tickbox"
+                    src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                </v:imagedata>
+            </v:shape>
+        </span><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">was<br />
+            <span style="margin: 0px;">
+                <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_34"
+                    o:spid="_x0000_i1048"
+                    style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;"
+                    type="#_x0000_t75">
+                    <v:imagedata o:title="tickbox"
+                        src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                    </v:imagedata>
+                </v:shape>
+            </span>were</span></div>
+    <br />
+    <div style="background: white; line-height: 19.2pt; margin: 0px;">
+        <b><span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">Q7
+                -&nbsp;</span></b><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">There
+            ____ no trouble at the party.</span></div>
+    <div style="background: white; line-height: 19.2pt; margin: 0px 0px 10.66px;">
+        <span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">
+            <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_33"
+                o:spid="_x0000_i1047"
+                style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;" type="#_x0000_t75">
+                <v:imagedata o:title="tickbox"
+                    src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                </v:imagedata>
+            </v:shape>
+        </span><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">was<br />
+            <span style="margin: 0px;">
+                <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_32"
+                    o:spid="_x0000_i1046"
+                    style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;"
+                    type="#_x0000_t75">
+                    <v:imagedata o:title="tickbox"
+                        src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                    </v:imagedata>
+                </v:shape>
+            </span>were</span></div>
+    <br />
+    <div style="background: white; line-height: 19.2pt; margin: 0px;">
+        <b><span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">Q8
+                -&nbsp;</span></b><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">____
+            there any difficulty in finding it?</span></div>
+    <div style="background: white; line-height: 19.2pt; margin: 0px 0px 10.66px;">
+        <span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">
+            <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_31"
+                o:spid="_x0000_i1045"
+                style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;" type="#_x0000_t75">
+                <v:imagedata o:title="tickbox"
+                    src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                </v:imagedata>
+            </v:shape>
+        </span><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">Was<br />
+            <span style="margin: 0px;">
+                <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_30"
+                    o:spid="_x0000_i1044"
+                    style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;"
+                    type="#_x0000_t75">
+                    <v:imagedata o:title="tickbox"
+                        src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                    </v:imagedata>
+                </v:shape>
+            </span>Were</span></div>
+    <br />
+    <div style="background: white; line-height: 19.2pt; margin: 0px;">
+        <b><span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">Q9
+                -&nbsp;</span></b><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">Who ____
+            at the meeting?</span></div>
+    <div style="background: white; line-height: 19.2pt; margin: 0px 0px 10.66px;">
+        <span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">
+            <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_29"
+                o:spid="_x0000_i1043"
+                style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;" type="#_x0000_t75">
+                <v:imagedata o:title="tickbox"
+                    src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                </v:imagedata>
+            </v:shape>
+        </span><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">was<br />
+            <span style="margin: 0px;">
+                <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_28"
+                    o:spid="_x0000_i1042"
+                    style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;"
+                    type="#_x0000_t75">
+                    <v:imagedata o:title="tickbox"
+                        src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                    </v:imagedata>
+                </v:shape>
+            </span>were</span></div>
+    <br />
+    <div style="background: white; line-height: 19.2pt; margin: 0px;">
+        <b><span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">Q10
+                -&nbsp;</span></b><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">It ____
+            no bother.</span></div>
+    <div style="background: white; line-height: 19.2pt; margin: 0px 0px 10.66px;">
+        <span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">
+            <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_27"
+                o:spid="_x0000_i1041"
+                style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;" type="#_x0000_t75">
+                <v:imagedata o:title="tickbox"
+                    src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                </v:imagedata>
+            </v:shape>
+        </span><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">was<br />
+            <span style="margin: 0px;">
+                <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_26"
+                    o:spid="_x0000_i1040"
+                    style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;"
+                    type="#_x0000_t75">
+                    <v:imagedata o:title="tickbox"
+                        src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                    </v:imagedata>
+                </v:shape>
+            </span>were</span></div>
+    <br />
+    <div style="background: white; line-height: 19.2pt; margin: 0px;">
+        <b><span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">Q11
+                -&nbsp;</span></b><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">How much
+            ____ they?</span></div>
+    <div style="background: white; line-height: 19.2pt; margin: 0px 0px 10.66px;">
+        <span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">
+            <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_25"
+                o:spid="_x0000_i1039"
+                style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;" type="#_x0000_t75">
+                <v:imagedata o:title="tickbox"
+                    src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                </v:imagedata>
+            </v:shape>
+        </span><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">was<br />
+            <span style="margin: 0px;">
+                <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_24"
+                    o:spid="_x0000_i1038"
+                    style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;"
+                    type="#_x0000_t75">
+                    <v:imagedata o:title="tickbox"
+                        src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                    </v:imagedata>
+                </v:shape>
+            </span>were</span></div>
+    <br />
+    <div style="background: white; line-height: 19.2pt; margin: 0px;">
+        <b><span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">Q12
+                -&nbsp;</span></b><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">How many
+            ____ there?</span></div>
+    <div style="background: white; line-height: 19.2pt; margin: 0px 0px 10.66px;">
+        <span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">
+            <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_23"
+                o:spid="_x0000_i1037"
+                style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;" type="#_x0000_t75">
+                <v:imagedata o:title="tickbox"
+                    src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                </v:imagedata>
+            </v:shape>
+        </span><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">was<br />
+            <span style="margin: 0px;">
+                <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_22"
+                    o:spid="_x0000_i1036"
+                    style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;"
+                    type="#_x0000_t75">
+                    <v:imagedata o:title="tickbox"
+                        src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                    </v:imagedata>
+                </v:shape>
+            </span>were<br />
+            <span style="margin: 0px;">
+                <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_21"
+                    o:spid="_x0000_i1035"
+                    style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;"
+                    type="#_x0000_t75">
+                    <v:imagedata o:title="tickbox"
+                        src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                    </v:imagedata>
+                </v:shape>
+            </span>Either could be used here.</span></div>
+    <br />
+    <div style="background: white; line-height: 19.2pt; margin: 0px;">
+        <b><span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">Q13
+                -&nbsp;</span></b><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">We _____
+            too late.</span></div>
+    <div style="background: white; line-height: 19.2pt; margin: 0px 0px 10.66px;">
+        <span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">
+            <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_20"
+                o:spid="_x0000_i1034"
+                style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;" type="#_x0000_t75">
+                <v:imagedata o:title="tickbox"
+                    src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                </v:imagedata>
+            </v:shape>
+        </span><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">was<br />
+            <span style="margin: 0px;">
+                <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_19"
+                    o:spid="_x0000_i1033"
+                    style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;"
+                    type="#_x0000_t75">
+                    <v:imagedata o:title="tickbox"
+                        src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                    </v:imagedata>
+                </v:shape>
+            </span>were<br />
+            <span style="margin: 0px;">
+                <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_18"
+                    o:spid="_x0000_i1032"
+                    style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;"
+                    type="#_x0000_t75">
+                    <v:imagedata o:title="tickbox"
+                        src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                    </v:imagedata>
+                </v:shape>
+            </span>Either could be used here.</span></div>
+    <br />
+    <div style="background: white; line-height: 19.2pt; margin: 0px;">
+        <b><span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">Q14
+                -&nbsp;</span></b><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">It ____
+            ours.</span></div>
+    <div style="background: white; line-height: 19.2pt; margin: 0px 0px 10.66px;">
+        <span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">
+            <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_17"
+                o:spid="_x0000_i1031"
+                style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;" type="#_x0000_t75">
+                <v:imagedata o:title="tickbox"
+                    src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                </v:imagedata>
+            </v:shape>
+        </span><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">wasn't<br />
+            <span style="margin: 0px;">
+                <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_16"
+                    o:spid="_x0000_i1030"
+                    style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;"
+                    type="#_x0000_t75">
+                    <v:imagedata o:title="tickbox"
+                        src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                    </v:imagedata>
+                </v:shape>
+            </span>weren't</span></div>
+    <br />
+    <div style="background: white; line-height: 19.2pt; margin: 0px;">
+        <b><span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">Q15
+                -&nbsp;</span></b><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">It ____
+            impossible.</span></div>
+    <div style="background: white; line-height: 19.2pt; margin: 0px 0px 10.66px;">
+        <span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">
+            <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_15"
+                o:spid="_x0000_i1029"
+                style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;" type="#_x0000_t75">
+                <v:imagedata o:title="tickbox"
+                    src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                </v:imagedata>
+            </v:shape>
+        </span><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">was<br />
+            <span style="margin: 0px;">
+                <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_14"
+                    o:spid="_x0000_i1028"
+                    style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;"
+                    type="#_x0000_t75">
+                    <v:imagedata o:title="tickbox"
+                        src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                    </v:imagedata>
+                </v:shape>
+            </span>were<br />
+            <span style="margin: 0px;">
+                <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_13"
+                    o:spid="_x0000_i1027"
+                    style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;"
+                    type="#_x0000_t75">
+                    <v:imagedata o:title="tickbox"
+                        src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                    </v:imagedata>
+                </v:shape>
+            </span>Either could be used here.</span></div>
+    <br />
+    <div style="background: white; line-height: 19.2pt; margin: 0px;">
+        <b><span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">Q16
+                -&nbsp;</span></b><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">It ____
+            the boys who took it.</span></div>
+    <div style="background: white; line-height: 19.2pt; margin: 0px 0px 10.66px;">
+        <span style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">
+            <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_12"
+                o:spid="_x0000_i1026"
+                style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;" type="#_x0000_t75">
+                <v:imagedata o:title="tickbox"
+                    src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                </v:imagedata>
+            </v:shape>
+        </span><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;">was<br />
+            <span style="margin: 0px;">
+                <v:shape alt="https://static.usingenglish.com/images/tickbox.gif" id="Picture_x0020_11"
+                    o:spid="_x0000_i1025"
+                    style="height: 11.25pt; mso-wrap-style: square; visibility: visible; width: 13.5pt;"
+                    type="#_x0000_t75">
+                    <v:imagedata o:title="tickbox"
+                        src="file:///C:/Users/ashish.jain50/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif">
+                    </v:imagedata>
+                </v:shape>
+            </span>were</span><span
+            style="color: #212529; font-family: &quot;Segoe UI&quot;,sans-serif; font-size: 12pt; margin: 0px;"></span>
+    </div>
+    --- &nbsp; *** &nbsp; --- &nbsp; *** &nbsp; --- &nbsp; *** &nbsp; --- &nbsp; *** &nbsp; ---<br />
+
+
+    <b></b><i></i><u></u><sub></sub><sup></sup><strike></strike><span
+        style="font-family: Calibri;"></span><b></b><i></i><u></u><sub></sub><sup></sup><strike></strike><b></b><i></i><u></u><sub></sub><sup></sup><strike></strike><b></b><i></i><u></u><sub></sub><sup></sup><strike><br /></strike><br />
+    Lesson on 'have', 'has' and 'had'.<br />
+    <br />
+    <div
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #3f3530; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 18px; margin-bottom: 20px; margin-left: 5px; margin-right: 5px; margin-top: 5px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        <strong style="box-sizing: content-box;">Here are some points to remember when using 'have' and
+            'has'.</strong><span
+            style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><br /></span>
+    </div>
+    <div
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #3f3530; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 18px; margin-bottom: 20px; margin-left: 5px; margin-right: 5px; margin-top: 5px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        Let's start with the basics.<span
+            style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"></span>
+    </div>
+    <div
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #3f3530; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 18px; margin-bottom: 20px; margin-left: 5px; margin-right: 5px; margin-top: 5px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        They can both be used to show possession and are important in making the '<em
+            style="box-sizing: content-box;">perfect tenses</em>'.<br style="box-sizing: content-box;" />'Had' is the
+        past tense of both 'has' and 'have'.</div>
+    <span
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+    </span><br />
+    <h2
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #095b85; font-family: &amp;quot; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; margin-bottom: 3px; margin-left: 0px; margin-right: 0px; margin-top: 10px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        have</h2>
+    <span
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+    </span><br />
+    <div
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #3f3530; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 18px; margin-bottom: 20px; margin-left: 5px; margin-right: 5px; margin-top: 5px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        Have is used with some pronouns and plural nouns:<br style="box-sizing: content-box;" /><em
+            style="box-sizing: content-box;">'I have a great English teacher.'</em><br
+            style="box-sizing: content-box;" /> <em style="box-sizing: content-box;"> 'You have toothpaste on your
+            chin.'<br style="box-sizing: content-box;" /> 'We have a meeting at 12.'</em><br
+            style="box-sizing: content-box;" /><em style="box-sizing: content-box;">'Nurses have a difficult job.'</em>
+    </div>
+    <span
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+    </span><br />
+    <h2
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #095b85; font-family: &amp;quot; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; margin-bottom: 3px; margin-left: 0px; margin-right: 0px; margin-top: 10px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        has</h2>
+    <span
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+    </span><br />
+    <div
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #3f3530; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 18px; margin-bottom: 20px; margin-left: 5px; margin-right: 5px; margin-top: 5px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        Has is used with the third person singular. For example:<br style="box-sizing: content-box;" /><em
+            style="box-sizing: content-box;"> 'She has a great personality.'</em><br
+            style="box-sizing: content-box;" /><em style="box-sizing: content-box;"> 'He has a new haircut.'</em><br
+            style="box-sizing: content-box;" /><em style="box-sizing: content-box;">'The washing machine has a leak in
+            it'.</em><br style="box-sizing: content-box;" /><em style="box-sizing: content-box;"> 'It has a hole near
+            the door.'</em></div>
+    <span
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+    </span><br />
+    <h2
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #095b85; font-family: &amp;quot; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; margin-bottom: 3px; margin-left: 0px; margin-right: 0px; margin-top: 10px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        contractions</h2>
+    <span
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+    </span><br />
+    <div
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #3f3530; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 18px; margin-bottom: 20px; margin-left: 5px; margin-right: 5px; margin-top: 5px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        I have = I've<br style="box-sizing: content-box;" /> you have = you've<br style="box-sizing: content-box;" /> we
+        have = we've<br style="box-sizing: content-box;" /> they have = They've<br style="box-sizing: content-box;" />
+        he has = he's<br style="box-sizing: content-box;" /> it has = it's</div>
+    <span
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+    </span><br />
+    <h2
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #095b85; font-family: &amp;quot; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; margin-bottom: 3px; margin-left: 0px; margin-right: 0px; margin-top: 10px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        negative contractions</h2>
+    <span
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+    </span><br />
+    <div
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #3f3530; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 18px; margin-bottom: 20px; margin-left: 5px; margin-right: 5px; margin-top: 5px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        has not = hasn't<br style="box-sizing: content-box;" /> have not = haven't<br
+            style="box-sizing: content-box;" /> had not = hadn't</div>
+    <span
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+    </span><br />
+    <h2
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #095b85; font-family: &amp;quot; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; margin-bottom: 3px; margin-left: 0px; margin-right: 0px; margin-top: 10px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        'have' and 'has' in questions</h2>
+    <span
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+    </span><br />
+    <div
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #3f3530; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 18px; margin-bottom: 20px; margin-left: 5px; margin-right: 5px; margin-top: 5px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        <em style="box-sizing: content-box;">'Have you been to Australia?'</em><br
+            style="box-sizing: content-box;" /><em style="box-sizing: content-box;"> 'Has Andrew left yet?'<br
+                style="box-sizing: content-box;" />'Who has my pen?'<br style="box-sizing: content-box;" /> 'Has anyone
+            seen my mobile phone?'</em></div>
+    <span
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+    </span><br />
+    <h2
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #095b85; font-family: &amp;quot; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; margin-bottom: 3px; margin-left: 0px; margin-right: 0px; margin-top: 10px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        'have got' and 'have'</h2>
+    <span
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+    </span><br />
+    <div
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #3f3530; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 18px; margin-bottom: 20px; margin-left: 5px; margin-right: 5px; margin-top: 5px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        Both 'have got' and 'have' mean the same thing. There is no difference.<span
+            style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><br /></span>
+    </div>
+    <div
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #3f3530; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 18px; margin-bottom: 20px; margin-left: 5px; margin-right: 5px; margin-top: 5px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        'I have got an i-phone.' = 'I have an i-phone'.<br style="box-sizing: content-box;" /> 'You have got a message.'
+        = You have a message.'<br style="box-sizing: content-box;" /> 'She has got no time to sleep.' ='She has no time
+        to sleep.'</div>
+    <span
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+    </span><br />
+    <h2
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #095b85; font-family: &amp;quot; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; margin-bottom: 3px; margin-left: 0px; margin-right: 0px; margin-top: 10px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        'have' and 'has' verb tenses</h2>
+    <span
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+    </span><br />
+    <div
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #3f3530; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 18px; margin-bottom: 20px; margin-left: 5px; margin-right: 5px; margin-top: 5px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        'have/has'' is an important verb in making the 'perfect tense':</div>
+    <span
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+    </span><br />
+    <div
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #3f3530; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 18px; margin-bottom: 20px; margin-left: 5px; margin-right: 5px; margin-top: 5px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        <strong style="box-sizing: content-box;">Present Perfect</strong><br style="box-sizing: content-box;" /> '<em
+            style="box-sizing: content-box;">She has lived here for a long time.'<br style="box-sizing: content-box;" />
+            'We have seen this TV show before.'<br style="box-sizing: content-box;" /> 'I have cut my finger.'</em>
+    </div>
+    <span
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+    </span><br />
+    <div
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #3f3530; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 18px; margin-bottom: 20px; margin-left: 5px; margin-right: 5px; margin-top: 5px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        <strong style="box-sizing: content-box;">Past Perfect</strong> <br style="box-sizing: content-box;" /><em
+            style="box-sizing: content-box;"> 'I had already decided not to go before he asked me.'<br
+                style="box-sizing: content-box;" /> 'They had finished the race before it started raining.'<br
+                style="box-sizing: content-box;" /> 'She had already left when he arrived'</em></div>
+    <span
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+    </span><br />
+    <h2
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #095b85; font-family: &amp;quot; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; margin-bottom: 3px; margin-left: 0px; margin-right: 0px; margin-top: 10px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        modal verbs: 'have to'</h2>
+    <span
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+    </span><br />
+    <div
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #3f3530; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 18px; margin-bottom: 20px; margin-left: 5px; margin-right: 5px; margin-top: 5px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        'have to' is used to mean that something is necessary. It is used in the following way in affirmative
+        sentences:<br style="box-sizing: content-box;" /><strong style="box-sizing: content-box;"> subject + modal (have
+            to / has to) + verb</strong><br style="box-sizing: content-box;" /><em style="box-sizing: content-box;"> 'I
+            have to wash my car today.'<br style="box-sizing: content-box;" />'He has to write a report.'<br
+                style="box-sizing: content-box;" />'I had to go to the bank yesterday.'</em></div>
+    <span
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+    </span><br />
+    <h2
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #095b85; font-family: &amp;quot; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; margin-bottom: 3px; margin-left: 0px; margin-right: 0px; margin-top: 10px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        'have to' in negative sentences</h2>
+    <span
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; color: #3f3530; display: inline !important; float: none; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+    </span><br />
+    <div
+        style="-webkit-text-stroke-width: 0px; background-color: transparent; box-sizing: content-box; color: #3f3530; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12.13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 18px; margin-bottom: 20px; margin-left: 5px; margin-right: 5px; margin-top: 5px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">
+        In negatives to show that something is <strong style="box-sizing: content-box;">not </strong>necessary we follow
+        this rule:<br style="box-sizing: content-box;" /><strong style="box-sizing: content-box;">subject + doesn't have
+            to + verb</strong><br style="box-sizing: content-box;" /><em style="box-sizing: content-box;"> 'We don't
+            have to work tomorrow.'<br style="box-sizing: content-box;" /> 'She doesn't have to wear a uniform to
+            school'<br style="box-sizing: content-box;" /> 'I didn't have to make my bed when I was young'</em></div>
+</div>

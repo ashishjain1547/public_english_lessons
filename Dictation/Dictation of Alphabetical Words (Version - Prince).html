@@ -1,0 +1,254 @@
+<div class="post-body entry-content" id="post-body-6961045165413415286" itemprop="description articleBody">
+
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <style>
+        .customTempCodeHolderForSocialMedia {
+            display: none;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        i.ib {
+            color: blue;
+        }
+
+        i.ig {
+            color: green;
+        }
+
+        .customOl {
+            font-size: 15px;
+        }
+    </style>
+
+    <br>
+    <br>
+    <div data-bind="template: {afterRender: reset}">
+        <button data-bind="click: previous">Previous</button> &nbsp;&nbsp;
+        <button data-bind="click: repeat">Repeat</button> &nbsp;&nbsp;
+        <button data-bind="click: next">Next</button> &nbsp;&nbsp;
+        <button data-bind="click: reset">Reset</button> &nbsp;&nbsp;
+        <button data-bind="click: help">Help</button> &nbsp;&nbsp;
+        <br>
+        <br>
+        <button class="" data-bind="click: repeat">
+            <h1 data-bind="text: current_letter">A</h1>
+        </button>
+
+        <img alt="" data-bind="attr: { src: imgSrc }">
+        <br><br>
+        <h2>Enter the spelling for the word that starts with <span class="" data-bind="text: current_letter"></span>.
+        </h2>
+        <br>
+
+        <input class="customSubmit" type="text" data-bind="value: spellingIn" />
+        &nbsp;&nbsp;
+        <button data-bind="click: checkSpelling">Submit</button>
+
+        <h1 data-bind="text: resultMessage"></h1>
+    </div>
+
+
+    <script>
+        var ViewModel = function () {
+            var self = this;
+            self.curr_num = 65;
+            self.resultMessage = ko.observable("");
+
+            self.source_words = {
+                "A": "Apple",
+                "B": "Ball",
+                "C": "Cat",
+                "D": "Dog",
+                "E": "Elephant",
+                "F": "Fish",
+                "G": "Grapes",
+                "H": "Hen",
+                "I": "Ice cream",
+                "J": "Jug",
+                "K": "Kite",
+                "L": "Lion",
+                "M": "Monkey",
+                "N": "Nest",
+                "O": "Orange",
+                "P": "Parrot",
+                "Q": "Queen",
+                "R": "Rat",
+                "S": "Sun",
+                "T": "Tiger",
+                "U": "Umbrella",
+                "V": "Van",
+                "W": "Watch",
+                "X": "Xmas Tree",
+                "Y": "Yak",
+                "Z": "Zebra"
+            }
+
+            self.source_images = {
+                "A": "https://blogger.googleusercontent.com/img/a/AVvXsEhgaWgvtKHtBD1qXR78wtPRyn0Oh5Ly91PebuRwWrFE6TQ8E-FVnH1HfdhzlCkAOD8rU5ees5icp_EaNqgR3nkGrftVxaQkXyp8zDzPOgfkGZhRrgOvECOuHZurbSxy3uqWKxTnRqaueEGSei6AI9apg7MXQTvJ86qUCkZ88uB2_UAucmCQNdh5ekhqjQ",
+
+                "B": "https://blogger.googleusercontent.com/img/a/AVvXsEjqpeaIhgfVQ-mguwhRBKpXbvzNe1efAutzR7EQ1H6JiWgvEs49qE2pZT9isswtDrwN2eeo8tgG1EooQu-uBpYvs2GDChF07qg8AQErJR72XeecgepmLBLFmUpx-B7P9xJ8m6G1s8Hobr6rg4uU6Q8h2YpTSbdURoMvgkHwFjlCu2fPubCYd4k1cZWO3g",
+
+                "C": "https://blogger.googleusercontent.com/img/a/AVvXsEjbMX0vsD0LLyEOgVlNxPFG2J9ABKP8fmfN0detxsKvjm0r8k0YCsF9mY5UB_RsOF-aidYSnLzBAW7ZE1vtTghDbmcZ81S5ddM8tPQltgum5JIQCwbvapYIUcK5LAyqhhD-SERoNK-ey6zYkGeLlrmJ9V7IsGVlkAfk3XamGuszuZQcbYTBBQ4JwkuJxA",
+
+                "D": "https://blogger.googleusercontent.com/img/a/AVvXsEiFcMM5Yeiy8tGhacwWXw7t4JGg45buOuuUigg1O1YTFW9Jt1wGdAeSp5_argOKRAwqQExUWyWc7uiaQOXVUDy5QxPzqL4LVDT4BC-edwFLJkEJZX8lxImytXtf58eOvYOqa3uSDdeJEXOOm4zB_YlokQdkRkDgxGITE2vG0WGzWTPKX-SgxAexI7T1gQ",
+
+                "E": "https://blogger.googleusercontent.com/img/a/AVvXsEg_NTOhGBXEQ9g9iYrNKLy6OicOY55lIgvXhRzhTGbpvc3OawKmluDUTQ0s1tdHdIByX2GW4deHniA1KQToi6hwaP-pxd-kq3gUmrpXyLF_AUmCgT4LJ25oKkIeVaYrfullthap3DDiIdXG-MlgaCiygqTe-rPVGTmSSq5dnMdlF9lUZWaQvhP4SOO0xg",
+
+                "F": "https://blogger.googleusercontent.com/img/a/AVvXsEje7bsEuBWszfRJ97ijvRh60Z8vZvzNyVXZEWKmA3kETdBXRdwWNHL8N_dsbERxnNy7-FSS6dFWDOeKdOzItSjfQPzgCkR33vyFqszo2meZ3vOtIEVLeMghdMykWvk9b86zGdsGjfWMI-Xw96QhfCK4sI2Dmw41c94gkMzrdNneyi5m4VaddsBcNM8D-Q",
+
+                "G": "https://blogger.googleusercontent.com/img/a/AVvXsEhH9YU4SyLXEZEQS5iyhLjfc35sYo86eaT_zXQCzO9QMm59SoejKDmo-GJAbiPPCz3z4XZSA3ypo2nS9tsf-MVLZGICluDGiwI4BtKMy0tU5sQvX_MTIUtMCsybqdYdQK5Z8HsB2cFrk9oh7BTFuboYvGtdyJ8WBcXW02OBlCVu4DxdN183D--YTnltYA",
+
+                "H": "https://blogger.googleusercontent.com/img/a/AVvXsEiH_LgPRTCqH-qiujbmRNHXAJ5b7klEkPVFHybPYl_qmvMjlcgqvlLh0vPuJVw48C77WLFuwlOhGFVQC1SyXNiNKNjs4I3_oeEJTDLbDp9jsKysgqAcrJScl8CpZ3b_vHWOmgwcj3SdLTA3BZ7wTrk3wQSLIYR-IFWbTgmcU4Fo85qRjpiUxJ8JcfeG2A",
+
+                "I": "https://blogger.googleusercontent.com/img/a/AVvXsEgYM112gksEBrIqi536YurWXvM9aP3Vlv2tQpbVV0A3BLuuKBX5rcia8qv5SREel3xpzu4fT42WZPy7k_5mizFC69OO_e5y6BBEKQp_9w6v0Zet7TrMqT10PRSh622wmy_oOCe2868DN_JPIPq7Au0H1PzXQyFC5Se_3FUcRxSO1nUDGi755Z8neI09pw",
+
+                "J": "https://blogger.googleusercontent.com/img/a/AVvXsEiIMOKqOybgT_sNk8YVpdn93Zg1oZdWODY-Y7KVTk_nC0RSATrskaxryTOyazHhRbKOjrUH4ipwn1-FnCiTuiSniVED-zM1-XCJxtebo5y_N7JnGyHqV0l3VpRWq9AoB7v_g86iMDre2z_Xnhs5ihaM9u-NUrme3X0XfB_ulUO4h0jzCprGGWLpAhV8-w",
+
+                "K": "https://blogger.googleusercontent.com/img/a/AVvXsEhe9_OHOw646l42oh3sbB58NunGjAin8XI_6-xJMeIqtyL3aJQBt8jepWsWRRtiYpA8vV6FJjNw-G7J_nL6RxZwfcZCeQG1gzVAxLPwTMo2q2pd8SwYK_2thXHkHfqoyYB8xxnfV31GiUwX9BtUpPMXDSjS0O299DYk6VfYJ7VrrafmiFoS1CrhqqP0rA",
+
+                "L": "https://blogger.googleusercontent.com/img/a/AVvXsEgsklsKcmnKveEXeU_5qrgTd9tnDOHfuiDltkiELI_8TLC8BlXytjho1-aX4NMGO60U6t9loafGKftudmAYz3KrJ75YLJl-VGmRjdvKF39It6G-w_hb20XrNsrrl_e4rKQJOA61zenWem-zPjhZ4U7Bb2i9z3Nau9AtHo_j_rGJpiF9gSdCUPCARcm40A",
+
+                "M": "https://blogger.googleusercontent.com/img/a/AVvXsEi1RaREH_ZqIDkVujdJEXUlIhdFNbg4L6qY3h8iRuaCUJRROty98C_9CUMK0oDdJF9CyRj9x9aKMG99wicMORmN29GXR6l6lhGRQPOn-IgxkPoBLcQm9M5UuNoJwDlhL39rVpWFphRzT71Ria7VGCThlEmczQqVRXePLdDojRbheTLR6omDuHCtP1Wlsw",
+
+                "N": "https://blogger.googleusercontent.com/img/a/AVvXsEjH8RRnTiRavS5KhlCIzohJwL3_erfcyU4elGbefSk7oGcNVQqb4BNv3S-7TV06DU7ozIdkdHkIHOqrbnDe8Fy_iqHWAmb5vzWFBE3VwupbmQ4YvW59hLXkXUEckTnd-BjO8N4GWSexjsRvoPPdcNdfuxb4U7qQgRJUMrkDIqAQWGmBHkgRPoBx2M3wMw",
+
+                "O": "https://blogger.googleusercontent.com/img/a/AVvXsEgMT9Wdtkk6nboWg2ktZ3TUznU4vl8LFlQwy-A-dPv9UwHStH7C3KtWTarLdAxs59PEW9gxIgX9F9ca-D8ef86gLqBjfI7JIfm-l8hFp3mYJoFiWqWY5BqlpxvG7Cku0o5vIEI0jte74aNgWeOWgFyw1Wa4D748fJd7YZ04Kg68HNQYziM9RiO2OPgJaA",
+
+                "P": "https://blogger.googleusercontent.com/img/a/AVvXsEhdPvbrP_FOHg_QaU24mWfeMkZXPLZMbuxF5p_Q6soG1029OGn42wekeKm-hpKGT_PyYCXv0MVyJ48PwcJDhL78HZ4j3n7zwygBRh_IP3EKPailt8AKt5B22_3pZJxoDtNj0gzmSHUe6mKjmAGYFbRKWKgJOrHrGNVJsoeEQ4h4rOTLd6oGugrmlXnF9Q",
+
+                "Q": "https://blogger.googleusercontent.com/img/a/AVvXsEhFSLeys2XGPh_1He8EwIGA9UAEVCd1sYWeKdIa33684sm2gV6K4-WVw8xkP6rDxLN7aleTBQLevHG-h_GnaAb84Bi5djKqd2VELClmsZ3jBT9qQrsIADivQz8wP-XZWDt_uzE7ODPV4_P_dXdVN3o-LFm9ZtTGYJE8-kf3zhMNnw7U9k5HXTmd7IrqUQ",
+
+                "R": "https://blogger.googleusercontent.com/img/a/AVvXsEi9kxMcJbb8jBpQ9wZULd63hV8GOw0Ps48vq1__AbVF9tP9Bjf_r0Iw5pIAQI_eyVkkW9wXVRgG8_ahOO3SuFLw9y81e0gcw19E_hm3Ee7vo7aFx7BNwSxLr9IHceyMPAC0GROoXFsFHc_VYNb5Ua1BTn8fl3NfrdS-_Om-wBwqil_Ye_fk-bekWC8Dew",
+
+                "S": "https://blogger.googleusercontent.com/img/a/AVvXsEilJw27o-qv14TVfGWAJpcBzPqrUfBxt4Yrvn6J3S57-z2iQeujJ1DoEw_whUO2yktDacEtgfpzElU9-yN41V7peKwp1orT1FQ_1QV8uiopXQsx17NAF84yqA4s24O7jGqO4t6nrlaNAJyzA1015w9Uak3xI4hT0ozuiN152l36oi2n6RfdTKsOyRH5ww",
+
+                "T": "https://blogger.googleusercontent.com/img/a/AVvXsEg9TBsQta0WfOyBbGxVwp3wJxdq7xxTHDHhCQVQiqbgrtT5mcGT-mue2o_GMSHQ-jarwrnY3-q3Go-ShsiUV0kANrHuh-phe1xgEHROswYoiRnothQaOHAKiRSVHW62VobhAYwuvCuY-tyEdn-H8zB6LzVKLBE1etfI3z7d2MBSj8qBclhT2wj2ZMymFA",
+
+                "U": "https://blogger.googleusercontent.com/img/a/AVvXsEgl9aFgH2LW4aAGPlync77_UCvytKnzNNhFMFEz0hFUctDXvWACvPFKbKrmKlWILf-ke5Y7QenqYm4CZWI1y7f-Ep1TbFtn1sOc2V-Wg_s1oH9xvWtE5l9IBXnDugzobTYykMilpuzakWz_n22VBFkcsX601ZZLVfrxkcVWqvF7KBp3eFN86_YluaW-Mw",
+
+                "V": "https://blogger.googleusercontent.com/img/a/AVvXsEh3F3OqMq5uzqwDRT9p-9bsVmHtnSSo00x-Zp1V-3N1_j0IIo6Lly4Ah0Dr5smH4Dxcd3slKUyBXkwa1xYDkp-k9FG0c5Mg6bmVg6hGUBiv8uC25205fbNfysB9syGnab7qKFTIvfchviri3aHQv7rhOsFpohjDYkAbSOZ_9hdM8p3yTPzR40t5k0m6PA",
+
+                "W": "https://blogger.googleusercontent.com/img/a/AVvXsEiuXBOaEMkMc-OopU9S9i93BTqKHV9gGXdJCtu_AP6JmA20Uoqacu3Ci6Rh0NV55hO_bXOxE8uUzQPSpepDHmq7SkGAalcVKvPeqbm2OA8vFK_viPMrQRbDY4EcfzwG5T7gT6UR2J_yaCn4fBrw0WVvQtqPzYwUTQcdRF2-lkwoxEwlgAwIHLQj8p1Ggw",
+
+                "X": "https://blogger.googleusercontent.com/img/a/AVvXsEglsRI2QXg_-hfQ4RgIgd6lOiBd3iblTxg0b8M5C84eTOO5c_3zdwl2PDOkhFljT-0pyupOIGaWNKkZpMmu3AA8fRfzhwKL0cr2tuBbI6PLdqc83WCTqTlqn8PBYp6PzIJpfiVJ4_jXgE7dLwzhNDAVS2fg3twkVSSPHf50a8cnHpLWgvfQ7Ak6nKA75A",
+
+                "Y": "https://blogger.googleusercontent.com/img/a/AVvXsEjxmIo-ikBVO11UsT_HCDZ8CJjGfMkM2mU_dhPl2hkvvFIh91wmHomlvI-ltnMEl3TaWmcqNwNDJGby08CkifFBXvXCI_3JY8JfDv3MmmFqyhu6MscuzKirwI6GHQKT359NDG_KgBV2pvALl5zWyjVSR7B9BZRL7BlP8dMMRlpcLgq0zXKO0i2prr-BGw",
+
+                "Z": "https://blogger.googleusercontent.com/img/a/AVvXsEgrBGL0Cb-lYuvXTM47L60npST6yb9v1renfH_Ft7MqQ7lnzAgqq1GvH9ZBTXvKx8r8RbnQzxJIv1yW7AhchljUEO2bj46fQRVei6dP-6T8vUCCOkiyfjQgZwqPbTTJgLIbr2JsZFtLWCY9Ktd1thE3bOni1r3E1tFtzO4CcFeAjzbBQEnLdc8N08xOyg"
+            }
+
+            self.current_number = ko.observable(65);
+
+            self.spellingIn = ko.observable("");
+
+
+            self.current_letter = ko.computed(function () {
+                return String.fromCharCode(self.current_number());
+            }, this);
+
+            self.current_word = ko.computed(function () {
+                return self.source_words[String.fromCharCode(self.current_number())];
+            }, self);
+
+            self.imgSrc = ko.computed(function () {
+                return self.source_images[String.fromCharCode(self.current_number())];
+            }, self);
+
+            this.previous = function () {
+                if (this.current_number() > 65) {
+                    this.current_number(this.current_number() - 1)
+                } else if (this.current_number() == 65) {
+                    this.current_number(90);
+                }
+
+                this.readIt(this.current_letter());
+            }
+
+            self.next = function () {
+                if (this.current_number() < 90) {
+                    this.current_number(this.current_number() + 1);
+                } else {
+                    this.current_number(65);
+                }
+
+                this.readIt(this.current_letter());
+            }
+
+            this.repeat = function () {
+                this.readIt(this.current_letter())
+            }
+
+            this.reset = function () {
+                this.curr_num = 65;
+
+
+                this.current_number(65);
+                this.readIt(this.current_letter());
+            }
+
+            this.check_curr_num = function () {
+                if (this.curr_num <= 91) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+
+
+            self.checkSpelling = function () {
+                if (self.spellingIn().toLowerCase() == self.current_word().toLowerCase()) {
+                    self.resultMessage("Correct Spelling for " + self.current_word());
+                    self.next();
+                } else {
+                    self.resultMessage(self.spellingIn() + " is Wrong Spelling.")
+                }
+                self.spellingIn("");
+                $("input.customSubmit").focus();
+            }
+
+            self.help = function () {
+                $("input.customSubmit").focus();
+                self.resultMessage("Help: " + self.current_word().toUpperCase());
+            }
+
+            this.readIt = function (in_) {
+                var msg = new SpeechSynthesisUtterance();
+
+                var voices = window.speechSynthesis.getVoices();
+                // 'Google US English' in Google Chrome (Version 98.0.4758.102 (Official Build) (64-bit))
+                msg.voice = voices[1];
+
+                msg.volume = 1; // From 0 to 1
+                msg.rate = 1; // From 0.1 to 10
+                msg.pitch = 0; // From 0 to 2
+
+                msg.text = self.source_words[in_];
+                window.speechSynthesis.speak(msg);
+            }
+        }
+        ko.applyBindings(ViewModel);
+    </script>
+    <span style="display: none;">Tags: English Lessons,Communication Skills,</span>
+    <div style="clear: both;"></div>
+</div>

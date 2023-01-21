@@ -1,0 +1,124 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <style>
+        .customTempCodeHolderForSocialMedia {
+            display: none;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        i.ibb {
+            display: block;
+            background-color: black;
+            color: white;
+        }
+
+        i.ibg {
+            display: block;
+            background-color: rgb(50, 50, 50);
+            color: white;
+        }
+
+
+        ul.no-bullets {
+            list-style-type: none;
+            /* Remove bullets */
+            padding: 0;
+            /* Remove padding */
+            margin: 0;
+            /* Remove margins */
+        }
+
+        li.customLi {
+            float: left;
+        }
+
+        li.customLi>span.customSpan {
+            display: block;
+            padding: 8px;
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<pre><h3>Twinkle, twinkle, litle star - Version 1</h3>
+
+<span class="para1">Twinkle, twinkle, little star,
+How I wonder what you are!
+Up above the world so high,
+Like a diamond in the sky. </span> <button data-bind="click: function() { readIt('para1') }">Read It</button>
+
+<span class="para2">When the blazing sun is gone,
+When he nothing shines upon,
+Then you show your little light,
+Twinkle, twinkle, all the night. </span> <button data-bind="click: function() { readIt('para2') }">Read It</button>
+
+<span class="para3">Then the trav’ller in the dark,
+Thanks you for your tiny spark,
+He could not see which way to go,
+If you did not twinkle so. </span> <button data-bind="click: function() { readIt('para3') }">Read It</button>
+
+<span class="para4">In the dark blue sky you keep,
+And often thro' my curtains peep,
+For you never shut your eye,
+Till the sun is in the sky.</span> <button data-bind="click: function() { readIt('para4') }">Read It</button>
+
+<span class="para5">'Tis your bright and tiny spark,
+Lights the trav’ller in the dark,
+Tho' I know not what you are,
+Twinkle, twinkle, little star.</span> <button data-bind="click: function() { readIt('para5') }">Read It</button>
+
+<h3>Twinkle, twinkle, litle star - Version 2</h3>
+
+<span class="para6">Twinkle, twinkle, little star,
+How we wonder what you are.
+Up above the world so high,
+Like a diamond in the sky.</span> <button data-bind="click: function() { readIt('para6') }">Read It</button>
+
+<span class="para7">When the glorious sun has set,
+And the grass with dew is wet,
+Then you show your little light,
+Twinkle, twinkle, all the night.</span> <button data-bind="click: function() { readIt('para7') }">Read It</button>
+
+<span class="para8">When the golden sun doth rise,
+Fills with shining light the skies,
+Then you fade away from sight,
+Shine no more 'till comes the night.</span> <button data-bind="click: function() { readIt('para8') }">Read It</button>
+
+</pre>
+
+<script>
+    var ViewModel = function () {
+        var self = this;
+
+        this.readIt = function (para) {
+            var msg = new SpeechSynthesisUtterance();
+            msg.text = $("." + para).text();
+            window.speechSynthesis.speak(msg);
+        }
+    };
+
+    ko.applyBindings(ViewModel);
+
+</script>
+<span style="display: none;">Tags: English Lessons,Communication Skills,</span>

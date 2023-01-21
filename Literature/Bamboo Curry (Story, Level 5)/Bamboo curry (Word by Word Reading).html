@@ -1,0 +1,192 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        i.ib {
+            color: blue;
+        }
+
+        i.ig {
+            color: green;
+        }
+
+        .customOl {
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <button data-bind="click: previousWord">Previous</button> &nbsp;
+    <button data-bind="click: repeatWord">Repeat</button> &nbsp;
+    <button data-bind="click: nextWord">Next</button>
+    <pre class="customTextWrapper">
+# Have you ever eaten a dish made of bamboo? Let's read this picture story and find out which part of bamboo can be cooked and eaten.
+
+One day the mother-in-law of a Santhal bridegroom cooked a special dish for him when he visited her.
+
+"This curry is delicious. What is it?" The mother-in-law pointed at the bamboo door.
+
+Next morning, just as he was about to leave, he remembered that there was no bamboo in his village.
+
+So he removed the bamboo door and carrying it with him left for his home.
+
+On reaching his village, he told his wife, "Make curry with this bamboo door."
+
+She was shocked. "How can I make curry out of a bamboo door?"
+
+"Come, I'll help you by chopping bamboo," he said.
+
+His wife boiled it and boiled it. Later when her husband tasted it he said, "it's too hard to eat. You don't know how to cook."
+
+His wife added more water and boiled it and boiled it.
+
+"It's still too hard. I can't eat it."
+
+The in-laws came to visit the young couple that evening. They all laughed at his foolishness. The mother-in-law said, "Didn't you know the curry was made from bamboo shoot and not from a bamboo door?"
+
+-- A Santhal Folk Tale         
+    </pre>
+</body>
+
+<script>
+    var viewModel = function () {
+        this.text = ko.observableArray([]);
+        const re = /\s+/
+
+        this.original_text = $('.customTextWrapper').text();
+        text($('.customTextWrapper').text().split(re));
+
+        this.curr_ix = ko.observable(0);
+        this.prev_click = ko.observable("repeat");
+
+        this.previousWord = function () {
+            switch (this.prev_click()) {
+                case "next":
+                    this.curr_ix(this.curr_ix() - 1);
+                    break;
+            }
+
+            
+            if (this.curr_ix() > 0) {
+                this.curr_ix(this.curr_ix() - 1);
+            }
+            this.colorWord();
+            this.speakWord(this.text()[this.curr_ix()]);
+
+            this.prev_click("previous");
+        }
+
+        this.repeatWord = function () {
+            switch (this.prev_click()) {
+                case "prev":
+                    this.curr_ix(this.curr_ix() + 1);
+                    break;
+                case "next":
+                    this.curr_ix(this.curr_ix() - 1);
+                    break;
+            }
+
+            
+            this.colorWord();
+            this.speakWord(this.text()[this.curr_ix()]);
+            this.prev_click("repeat");
+        }
+
+
+        this.nextWord = function () {
+            console.log(this.prev_click());
+            switch (this.prev_click()) {
+                case "previous":
+                    if (this.curr_ix() < (this.text().length - 1) && this.curr_ix() > 0) {
+                        this.curr_ix(this.curr_ix() + 1);
+                    }
+                    break;
+
+                case "repeat":
+                    if (this.curr_ix() < (this.text().length - 1) && this.curr_ix() > 0) {
+                        this.curr_ix(this.curr_ix() + 1);
+                    }
+                    break;
+            }
+
+            this.colorWord();
+            this.speakWord(this.text()[this.curr_ix()]);
+
+            if (this.curr_ix() < (this.text().length - 1)) {
+                this.curr_ix(this.curr_ix() + 1);
+            }
+            this.prev_click("next");
+        }
+
+
+
+        this.speakWord = function (word) {
+            var msg = new SpeechSynthesisUtterance();
+            msg.text = word;
+
+            var voices = window.speechSynthesis.getVoices();
+            // 'Google US English' in Google Chrome (Version 98.0.4758.102 (Official Build) (64-bit))
+            msg.voice = voices[1]; 
+
+            msg.volume = 1; // From 0 to 1
+            msg.rate = 1; // From 0.1 to 10
+            msg.pitch = 0; // From 0 to 2
+
+            // msg.text = "Como estas Joel";
+            // msg.lang = 'es';
+
+            window.speechSynthesis.speak(msg);
+        }
+
+        this.colorWord = function () {
+            $(".customTextWrapper").text(this.original_text);
+
+            let t = this.original_text.split("\n");
+
+            for (let i = 0; i < t.length; i++) {
+                if (t[i].search("/^" + this.text()[this.curr_ix()] + "$/")) {
+                    t[i] = t[i].split(" ");
+
+                    let ix = t[i].indexOf(this.text()[this.curr_ix()]);
+
+                    if (!t[i][ix]) {
+                        t[i] = t[i].join(" ");
+                        continue;
+                    }
+
+                    let t2 = t[i].slice(0, ix).concat(["<b style='color: red'>" + (t[i][ix] ? (" " + t[i][ix] + " ") : "\n") + "</b>"])
+                    t2 = t2.concat(t[i].slice(ix + 1, t[i].length))
+
+                    t[i] = t2.join(" ");
+
+                }
+            }
+
+            $(".customTextWrapper").html(t.join("\n"));
+        }
+
+    }
+
+    ko.applyBindings(viewModel);
+</script>
+<span style="display: none;">Tags: Communication Skills,English Lessons,</span>
