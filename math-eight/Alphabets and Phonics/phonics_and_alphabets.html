@@ -1,0 +1,261 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+
+    <style>
+        @font-face {
+            font-family: myFirstFont;
+            src: url('./kg-primary-dots-family/kg-primary-dots.regular.ttf');
+            font-weight: bold;
+        }
+
+        body {
+            padding: 10px;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-break: break-word;
+        }
+
+        pre.customDottedText {
+            font-family: myFirstFont;
+            font-size: 32px;
+            background-color: white;
+        }
+
+        .h1,
+        h1 {
+            font-size: 58px;
+        }
+
+        b,
+        strong {
+            font-weight: 400;
+            font-size: 30px;
+        }
+
+        .btn {
+            font-size: 30px;
+            margin: 2px;
+        }
+
+        .btn-dark,
+        .btn-dark:hover,
+        .btn-dark:focus {
+            color: #fff;
+            background-color: #23272b;
+            border-color: #1d2124;
+        }
+
+        .customBtn0,
+        .customBtn0:hover,
+        .customBtn0:focus {
+            color: #1d2124;
+            background-color: #f47961;
+            border-color: #f47961;
+        }
+
+        .customBtn1,
+        .customBtn1:hover,
+        .customBtn1:focus {
+            color: #1d2124;
+            background-color: #f0c419;
+            border-color: #f0c419;
+        }
+
+        .customBtn2,
+        .customBtn2:hover,
+        .customBtn2:focus {
+            color: #fff;
+            background-color: #255c61;
+            border-color: #255c61;
+        }
+
+        .customBtn3,
+        .customBtn3:hover,
+        .customBtn3:focus {
+            color: #1d2124;
+            background-color: #78909c;
+            border-color: #78909c;
+        }
+
+        .customBtn4,
+        .customBtn4:hover,
+        .customBtn4:focus {
+            color: #1d2124;
+            background-color: #6ad4cf;
+            border-color: #6ad4cf;
+        }
+
+        .customBtn5,
+        .customBtn5:hover,
+        .customBtn5:focus {
+            color: #1d2124;
+            background-color: #17aee8;
+            border-color: #17aee8;
+        }
+
+        .customBtn6,
+        .customBtn6:hover,
+        .customBtn6:focus {
+            color: #1d2124;
+            background-color: #5c6bc0;
+            border-color: #5c6bc0;
+        }
+
+        .customBtn7,
+        .customBtn7:hover,
+        .customBtn7:focus {
+            color: #fff;
+            background-color: #444b6e;
+            border-color: #444b6e;
+        }
+
+        .customBtn8,
+        .customBtn8:hover,
+        .customBtn8:focus {
+            color: #1d2124;
+            background-color: #ef4c60;
+            border-color: #ef4c60;
+        }
+
+        .customBtn9,
+        .customBtn9:hover,
+        .customBtn9:focus {
+            color: #fff;
+            background-color: #744593;
+            border-color: #744593;
+        }
+
+
+        
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div data-bind="foreach: groups">
+        <div>
+            <h1 data-bind="text: label"></h1>
+            <br> <br>
+            <!-- ko foreach: sounds_and_words -->
+            <b>Sound:</b> <button type="button" class="btn btn-dark"
+                data-bind="text: $data[0]['soundName'], click: readIt($data[0]['soundName'])"></button>
+
+            <br><br>
+
+            <b>Words:</b>
+            <!-- ko foreach: $data[1]['list'] -->
+            <button data-bind="text: $data, click: readIt($data), class: 'btn customBtn' + $index()"></button>
+            &nbsp;&nbsp;
+            <!-- /ko -->
+            <br><br><br>
+            <!-- /ko -->
+        </div>
+        
+    </div>
+</body>
+
+<script>
+
+    function Group(label, sounds_and_words) {
+        this.label = label;
+        this.sounds_and_words = sounds_and_words;
+    }
+
+    function Sound(name) {
+        this.soundName = name;
+    }
+
+    function WordList(list) {
+        this.list = list;
+    }
+
+    let dataset = {
+        "A": {
+            "at": ["bat", "cat", "fat", "hat", "mat", "rat"],
+            "ag": ["bag", "rag", "tag", "sag", "nag", "wag", "hag", "zag"],
+            "ar": ["bar", "car", "jar"], // "war"
+            "ay": ["bay", "day", "hay", "lay", "may", "nay", "pay", "ray", "say", "way"],
+        },
+
+        "B": {
+            "with 'A' as in bag": ["bag", "bat", "ban"],
+            "with 'E' as in bet": ["bet", "beg"],
+            "with 'I' as in bib": ["bib", "bit", "big"],
+            "with 'U' as in bus": ["bus", "bud"]
+        },
+
+        "C": {
+            "with 'A' as in cat": ["cat", "can", "cab", "cap"],
+            "with 'O' as in cot": ["cot", "cop", "cod", "cob", "con", "cog"]
+        }
+    }
+
+    const zip = (a, b) => a.map((k, i) => [k, b[i]]);
+
+    let getGroups = function (dict) {
+        // Loop over each group name
+        const groups = Object.keys(dict)
+            .map(label => {
+
+                // Create a list of Buttons for each child
+                const sounds = Object.keys(dict[label])
+                    .map(soundName => new Sound(soundName));
+
+
+
+                const words = sounds.map(sound => {
+                    rtnVal = new WordList(dict[label][sound.soundName])
+
+                    return rtnVal
+                })
+
+                const sounds_and_words = zip(sounds, words)
+                return new Group(label, sounds_and_words);
+            });
+
+        // Return a new App with our new groups
+        return groups;
+    }
+
+    let ViewModel = function () {
+        let self = this;
+        this.groups = getGroups(dataset)
+
+        this.readIt = function (in_) {
+            var msg = new SpeechSynthesisUtterance();
+
+            var voices = window.speechSynthesis.getVoices();
+            // 'Google US English' in Google Chrome (Version 98.0.4758.102 (Official Build) (64-bit))
+            msg.voice = voices[1];
+
+            msg.volume = 1; // From 0 to 1
+            msg.rate = 0.7; // From 0.1 to 10
+            msg.pitch = 0; // From 0 to 2
+
+            msg.text = in_;
+            window.speechSynthesis.speak(msg);
+        }
+    };
+
+    ko.applyBindings(ViewModel)
+
+</script>
